@@ -312,8 +312,6 @@ req-kg/
 │   ├── run_repo.py             # end-to-end: coverage + pass rate + ρ per repository
 │   ├── correlate_passk.py      # coverage ↔ pass-rate correlations
 │   ├── diag_passk.py           # per-test diagnosis of a run
-│   ├── kappa.py                # agreement on the responsibility annotation
-│   ├── make_annotation_sheet.py# annotation sheet for the filters
 │   └── score_*.py              # phase-0 hand-coded scorers (superseded)
 ├── prompts/                    # the exact prompts sent to the model
 ├── llm-answers/                # requirement KGs and generated services
