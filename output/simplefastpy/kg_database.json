@@ -1,0 +1,35 @@
+{
+  "nodes": [
+    {
+      "id": "database",
+      "kind": "module",
+      "name": "database",
+      "qualified": "database",
+      "line": 1
+    },
+    {
+      "id": "get_db",
+      "kind": "function",
+      "name": "get_db",
+      "qualified": "get_db",
+      "line": 11
+    }
+  ],
+  "edges": [
+    {
+      "src": "database",
+      "dst": "get_db",
+      "type": "contains"
+    },
+    {
+      "src": "get_db",
+      "dst": "call:db.close",
+      "type": "calls"
+    },
+    {
+      "src": "get_db",
+      "dst": "call:SessionLocal",
+      "type": "calls"
+    }
+  ]
+}

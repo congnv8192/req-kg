@@ -1,0 +1,288 @@
+{
+"entities": [
+"User"
+],
+"attributes": [
+{
+"name": "id",
+"type": "int",
+"required": null,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": null
+},
+{
+"name": "username",
+"type": "string",
+"required": true,
+"max_length": 50,
+"min_length": 3,
+"enum": null,
+"default": null,
+"unique": true
+},
+{
+"name": "email",
+"type": "string",
+"required": true,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": true
+},
+{
+"name": "password_hash",
+"type": null,
+"required": true,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": null
+},
+{
+"name": "full_name",
+"type": "string",
+"required": true,
+"max_length": 100,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": null
+},
+{
+"name": "role",
+"type": null,
+"required": true,
+"max_length": null,
+"min_length": null,
+"enum": [
+"user",
+"admin",
+"moderator"
+],
+"default": null,
+"unique": null
+},
+{
+"name": "phone",
+"type": null,
+"required": false,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": null
+},
+{
+"name": "status",
+"type": null,
+"required": null,
+"max_length": null,
+"min_length": null,
+"enum": [
+"active",
+"inactive",
+"suspended"
+],
+"default": "active",
+"unique": null
+},
+{
+"name": "created_at",
+"type": null,
+"required": null,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": null
+},
+{
+"name": "updated_at",
+"type": null,
+"required": null,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": null
+},
+{
+"name": "password",
+"type": "string",
+"required": true,
+"max_length": null,
+"min_length": 8,
+"enum": null,
+"default": null,
+"unique": null
+},
+{
+"name": "new_password",
+"type": "string",
+"required": true,
+"max_length": null,
+"min_length": 8,
+"enum": null,
+"default": null,
+"unique": null
+},
+{
+"name": "page",
+"type": null,
+"required": false,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": "1",
+"unique": null
+},
+{
+"name": "limit",
+"type": null,
+"required": false,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": "10",
+"unique": null
+},
+{
+"name": "search",
+"type": null,
+"required": false,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": null
+}
+],
+"operations": [
+{
+"method": "POST",
+"path": "/api/v1/users",
+"action": "create"
+},
+{
+"method": "GET",
+"path": "/api/v1/users",
+"action": "list"
+},
+{
+"method": "GET",
+"path": "/api/v1/users/{user_id}",
+"action": "retrieve"
+},
+{
+"method": "PUT",
+"path": "/api/v1/users/{user_id}",
+"action": "update"
+},
+{
+"method": "DELETE",
+"path": "/api/v1/users/{user_id}",
+"action": "delete"
+},
+{
+"method": "POST",
+"path": "/api/v1/auth/login",
+"action": "login"
+},
+{
+"method": "POST",
+"path": "/api/v1/users/{user_id}/reset-password",
+"action": "reset_password"
+},
+{
+"method": "GET",
+"path": "/api/v1/health",
+"action": "health"
+}
+],
+"relations": [],
+"thresholds": [
+{
+"name": "port",
+"value": 8081
+},
+{
+"name": "api_prefix",
+"value": "/api/v1"
+},
+{
+"name": "content_type",
+"value": "application/json"
+},
+{
+"name": "default_page",
+"value": 1
+},
+{
+"name": "default_page_size",
+"value": 10
+},
+{
+"name": "max_page_size",
+"value": 100
+},
+{
+"name": "username_min_length",
+"value": 3
+},
+{
+"name": "username_max_length",
+"value": 50
+},
+{
+"name": "password_min_length",
+"value": 8
+},
+{
+"name": "full_name_max_length",
+"value": 100
+}
+],
+"nfr": [
+{
+"category": "validation",
+"detail": "Strict input validation and type checking; username must be alphanumeric, email must be valid, and phone must be valid."
+},
+{
+"category": "error_handling",
+"detail": "Complete error handling with user-friendly messages using {error:{code,message,details}} and codes 400, 401, 403, 404, 409, 422, and 500."
+},
+{
+"category": "logging",
+"detail": "Complete operation logging including security events."
+},
+{
+"category": "deployment",
+"detail": "Service must listen on port 8081."
+},
+{
+"category": "configuration",
+"detail": "Database connection and JWT keys must be configured via environment variables."
+},
+{
+"category": "health_check",
+"detail": "Provide a health check endpoint."
+},
+{
+"category": "containerization",
+"detail": "Support Docker containerization."
+},
+{
+"category": "migration",
+"detail": "Support database schema migration."
+},
+{
+"category": "auth",
+"detail": "Support user authentication and permission/role management."
+}
+]
+}

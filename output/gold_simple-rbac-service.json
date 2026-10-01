@@ -1,0 +1,14 @@
+{
+  "node:get_success_response": "FR-endpoint",
+  "node:get_error_response": "FR-endpoint",
+  "node:health_check": "FR-endpoint",
+  "node:create_role": "FR-endpoint",
+  "node:get_user_permissions": "FR-endpoint",
+  "nfr:config": "NFR-struct",
+  "node:get_config_summary": "FR-endpoint",
+  "node:validate_role_name": "FR-validation",
+  "node:validate_permission_name": "FR-validation",
+  "node:validate_user_id": "FR-validation",
+  "node:validate_role_id": "FR-validation",
+  "nfr:containerization": "NFR-struct"
+}

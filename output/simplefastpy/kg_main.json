@@ -1,0 +1,178 @@
+{
+  "nodes": [
+    {
+      "id": "main",
+      "kind": "module",
+      "name": "main",
+      "qualified": "main",
+      "line": 1
+    },
+    {
+      "id": "get_all_users",
+      "kind": "function",
+      "name": "get_all_users",
+      "qualified": "get_all_users",
+      "line": 13
+    },
+    {
+      "id": "get_user_by_email",
+      "kind": "function",
+      "name": "get_user_by_email",
+      "qualified": "get_user_by_email",
+      "line": 17
+    },
+    {
+      "id": "create_user",
+      "kind": "function",
+      "name": "create_user",
+      "qualified": "create_user",
+      "line": 25
+    },
+    {
+      "id": "update_user_by_email",
+      "kind": "function",
+      "name": "update_user_by_email",
+      "qualified": "update_user_by_email",
+      "line": 33
+    },
+    {
+      "id": "delete_user_by_email",
+      "kind": "function",
+      "name": "delete_user_by_email",
+      "qualified": "delete_user_by_email",
+      "line": 43
+    }
+  ],
+  "edges": [
+    {
+      "src": "main",
+      "dst": "get_all_users",
+      "type": "contains"
+    },
+    {
+      "src": "get_all_users",
+      "dst": "call:db.query(User).all",
+      "type": "calls"
+    },
+    {
+      "src": "get_all_users",
+      "dst": "call:db.query",
+      "type": "calls"
+    },
+    {
+      "src": "main",
+      "dst": "get_user_by_email",
+      "type": "contains"
+    },
+    {
+      "src": "get_user_by_email",
+      "dst": "call:HTTPException",
+      "type": "calls"
+    },
+    {
+      "src": "get_user_by_email",
+      "dst": "call:db.query(User).filter(User.id == user_id).first",
+      "type": "calls"
+    },
+    {
+      "src": "get_user_by_email",
+      "dst": "call:db.query(User).filter",
+      "type": "calls"
+    },
+    {
+      "src": "get_user_by_email",
+      "dst": "call:db.query",
+      "type": "calls"
+    },
+    {
+      "src": "main",
+      "dst": "create_user",
+      "type": "contains"
+    },
+    {
+      "src": "create_user",
+      "dst": "call:db.refresh",
+      "type": "calls"
+    },
+    {
+      "src": "create_user",
+      "dst": "call:db.commit",
+      "type": "calls"
+    },
+    {
+      "src": "create_user",
+      "dst": "call:db.add",
+      "type": "calls"
+    },
+    {
+      "src": "create_user",
+      "dst": "call:User",
+      "type": "calls"
+    },
+    {
+      "src": "main",
+      "dst": "update_user_by_email",
+      "type": "contains"
+    },
+    {
+      "src": "update_user_by_email",
+      "dst": "call:db.commit",
+      "type": "calls"
+    },
+    {
+      "src": "update_user_by_email",
+      "dst": "call:HTTPException",
+      "type": "calls"
+    },
+    {
+      "src": "update_user_by_email",
+      "dst": "call:db.query(User).filter(User.id == user_id).first",
+      "type": "calls"
+    },
+    {
+      "src": "update_user_by_email",
+      "dst": "call:db.query(User).filter",
+      "type": "calls"
+    },
+    {
+      "src": "update_user_by_email",
+      "dst": "call:db.query",
+      "type": "calls"
+    },
+    {
+      "src": "main",
+      "dst": "delete_user_by_email",
+      "type": "contains"
+    },
+    {
+      "src": "delete_user_by_email",
+      "dst": "call:db.commit",
+      "type": "calls"
+    },
+    {
+      "src": "delete_user_by_email",
+      "dst": "call:db.delete",
+      "type": "calls"
+    },
+    {
+      "src": "delete_user_by_email",
+      "dst": "call:HTTPException",
+      "type": "calls"
+    },
+    {
+      "src": "delete_user_by_email",
+      "dst": "call:db.query(User).filter(User.id == user_id).first",
+      "type": "calls"
+    },
+    {
+      "src": "delete_user_by_email",
+      "dst": "call:db.query(User).filter",
+      "type": "calls"
+    },
+    {
+      "src": "delete_user_by_email",
+      "dst": "call:db.query",
+      "type": "calls"
+    }
+  ]
+}

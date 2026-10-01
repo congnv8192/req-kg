@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "id": "database",
+      "kind": "module",
+      "name": "database",
+      "qualified": "database",
+      "line": 1
+    },
+    {
+      "id": "_create_connection",
+      "kind": "function",
+      "name": "_create_connection",
+      "qualified": "_create_connection",
+      "line": 34
+    },
+    {
+      "id": "get_connection",
+      "kind": "function",
+      "name": "get_connection",
+      "qualified": "get_connection",
+      "line": 42
+    },
+    {
+      "id": "db_session",
+      "kind": "function",
+      "name": "db_session",
+      "qualified": "db_session",
+      "line": 52
+    },
+    {
+      "id": "reset_database",
+      "kind": "function",
+      "name": "reset_database",
+      "qualified": "reset_database",
+      "line": 58
+    }
+  ],
+  "edges": [
+    {
+      "src": "database",
+      "dst": "_create_connection",
+      "type": "contains"
+    },
+    {
+      "src": "_create_connection",
+      "dst": "call:conn.commit",
+      "type": "calls"
+    },
+    {
+      "src": "_create_connection",
+      "dst": "call:conn.execute",
+      "type": "calls"
+    },
+    {
+      "src": "_create_connection",
+      "dst": "call:sqlite3.connect",
+      "type": "calls"
+    },
+    {
+      "src": "database",
+      "dst": "get_connection",
+      "type": "contains"
+    },
+    {
+      "src": "get_connection",
+      "dst": "call:_create_connection",
+      "type": "calls"
+    },
+    {
+      "src": "database",
+      "dst": "db_session",
+      "type": "contains"
+    },
+    {
+      "src": "db_session",
+      "dst": "call:get_connection",
+      "type": "calls"
+    },
+    {
+      "src": "database",
+      "dst": "reset_database",
+      "type": "contains"
+    },
+    {
+      "src": "reset_database",
+      "dst": "call:conn.commit",
+      "type": "calls"
+    },
+    {
+      "src": "reset_database",
+      "dst": "call:conn.execute",
+      "type": "calls"
+    },
+    {
+      "src": "reset_database",
+      "dst": "call:conn.execute",
+      "type": "calls"
+    },
+    {
+      "src": "reset_database",
+      "dst": "call:get_connection",
+      "type": "calls"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+"entities": [
+"Role",
+"Permission",
+"User"
+],
+"attributes": [
+{
+"name": "role_id",
+"type": "string",
+"required": null,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": null
+},
+{
+"name": "role_name",
+"type": "string",
+"required": true,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": true
+},
+{
+"name": "permissions",
+"type": "array of string",
+"required": true,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": null
+},
+{
+"name": "user_id",
+"type": "string",
+"required": null,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": null
+},
+{
+"name": "role_ids",
+"type": "array of string",
+"required": true,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": null
+},
+{
+"name": "status",
+"type": "string",
+"required": null,
+"max_length": null,
+"min_length": null,
+"enum": [
+"success",
+"error"
+],
+"default": null,
+"unique": null
+},
+{
+"name": "message",
+"type": "string",
+"required": null,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": null
+}
+],
+"operations": [
+{
+"method": "POST",
+"path": "/api/roles",
+"action": "create"
+},
+{
+"method": "POST",
+"path": "/api/roles/{role_id}/permissions",
+"action": "other"
+},
+{
+"method": "POST",
+"path": "/api/users/{user_id}/roles",
+"action": "other"
+},
+{
+"method": "GET",
+"path": "/api/users/{user_id}/permissions",
+"action": "retrieve"
+}
+],
+"relations": [
+{
+"from": "User",
+"to": "Role",
+"kind": "many-to-many"
+},
+{
+"from": "Role",
+"to": "Permission",
+"kind": "many-to-many"
+}
+],
+"thresholds": [
+{
+"name": "port",
+"value": 8080
+}
+],
+"nfr": [
+{
+"category": "deployment",
+"detail": "Service should persist data in memory with no database required"
+},
+{
+"category": "validation",
+"detail": "Permission names are case-sensitive"
+},
+{
+"category": "error_handling",
+"detail": "Use JSON format for all responses"
+},
+{
+"category": "error_handling",
+"detail": "HTTP status codes should follow REST conventions: 200 for successful operations, 400 for invalid input, 404 for non-existent resources, and 500 for server errors"
+}
+]
+}

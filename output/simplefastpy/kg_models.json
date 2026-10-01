@@ -1,0 +1,89 @@
+{
+  "nodes": [
+    {
+      "id": "models",
+      "kind": "module",
+      "name": "models",
+      "qualified": "models",
+      "line": 1
+    },
+    {
+      "id": "User",
+      "kind": "class",
+      "name": "User",
+      "qualified": "User",
+      "line": 6,
+      "bases": [
+        "Base"
+      ],
+      "is_model": false
+    },
+    {
+      "id": "User.__tablename__",
+      "kind": "field",
+      "name": "__tablename__",
+      "qualified": "User.__tablename__",
+      "line": 7
+    },
+    {
+      "id": "User.id",
+      "kind": "field",
+      "name": "id",
+      "qualified": "User.id",
+      "line": 8
+    },
+    {
+      "id": "User.name",
+      "kind": "field",
+      "name": "name",
+      "qualified": "User.name",
+      "line": 9
+    },
+    {
+      "id": "User.email",
+      "kind": "field",
+      "name": "email",
+      "qualified": "User.email",
+      "line": 10
+    },
+    {
+      "id": "User.password",
+      "kind": "field",
+      "name": "password",
+      "qualified": "User.password",
+      "line": 11
+    }
+  ],
+  "edges": [
+    {
+      "src": "models",
+      "dst": "User",
+      "type": "contains"
+    },
+    {
+      "src": "User",
+      "dst": "User.__tablename__",
+      "type": "has_field"
+    },
+    {
+      "src": "User",
+      "dst": "User.id",
+      "type": "has_field"
+    },
+    {
+      "src": "User",
+      "dst": "User.name",
+      "type": "has_field"
+    },
+    {
+      "src": "User",
+      "dst": "User.email",
+      "type": "has_field"
+    },
+    {
+      "src": "User",
+      "dst": "User.password",
+      "type": "has_field"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "nodes": [
+    {
+      "id": "models",
+      "kind": "module",
+      "name": "models",
+      "qualified": "models",
+      "line": 1
+    },
+    {
+      "id": "Movie",
+      "kind": "class",
+      "name": "Movie",
+      "qualified": "Movie",
+      "line": 5
+    },
+    {
+      "id": "Movie.title",
+      "kind": "field",
+      "name": "title",
+      "qualified": "Movie.title",
+      "line": 6
+    },
+    {
+      "id": "Movie.genre",
+      "kind": "field",
+      "name": "genre",
+      "qualified": "Movie.genre",
+      "line": 7
+    },
+    {
+      "id": "Movie.year",
+      "kind": "field",
+      "name": "year",
+      "qualified": "Movie.year",
+      "line": 8
+    },
+    {
+      "id": "Movie.creator",
+      "kind": "field",
+      "name": "creator",
+      "qualified": "Movie.creator",
+      "line": 9
+    },
+    {
+      "id": "Movie.__str__",
+      "kind": "method",
+      "name": "__str__",
+      "qualified": "Movie.__str__",
+      "line": 11
+    }
+  ],
+  "edges": [
+    {
+      "src": "models",
+      "dst": "Movie",
+      "type": "contains"
+    },
+    {
+      "src": "Movie",
+      "dst": "Movie.title",
+      "type": "has_field"
+    },
+    {
+      "src": "Movie",
+      "dst": "Movie.genre",
+      "type": "has_field"
+    },
+    {
+      "src": "Movie",
+      "dst": "Movie.year",
+      "type": "has_field"
+    },
+    {
+      "src": "Movie",
+      "dst": "Movie.creator",
+      "type": "has_field"
+    },
+    {
+      "src": "Movie",
+      "dst": "Movie.__str__",
+      "type": "has_method"
+    }
+  ]
+}

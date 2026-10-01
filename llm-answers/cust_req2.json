@@ -1,0 +1,117 @@
+{
+"entities": [
+"Favorite",
+"Like",
+"History"
+],
+"attributes": [],
+"operations": [
+{
+"method": "POST",
+"path": "/api/v1/favorites",
+"action": "create"
+},
+{
+"method": "GET",
+"path": "/api/v1/favorites",
+"action": "list"
+},
+{
+"method": "DELETE",
+"path": "/api/v1/favorites/{favorite_id}",
+"action": "delete"
+},
+{
+"method": "POST",
+"path": "/api/v1/likes",
+"action": "create"
+},
+{
+"method": "GET",
+"path": "/api/v1/likes/stats/{content_id}",
+"action": "retrieve"
+},
+{
+"method": "GET",
+"path": "/api/v1/likes/history",
+"action": "list"
+},
+{
+"method": "POST",
+"path": "/api/v1/history",
+"action": "create"
+},
+{
+"method": "GET",
+"path": "/api/v1/history",
+"action": "list"
+},
+{
+"method": "DELETE",
+"path": "/api/v1/history/{history_id}",
+"action": "delete"
+},
+{
+"method": "DELETE",
+"path": "/api/v1/history",
+"action": "delete"
+}
+],
+"relations": [],
+"thresholds": [
+{
+"name": "favorites_max_page_size",
+"value": 100
+},
+{
+"name": "likes_history_max_page_size",
+"value": 50
+},
+{
+"name": "history_max_page_size",
+"value": 100
+},
+{
+"name": "favorites_default_page",
+"value": 1
+},
+{
+"name": "favorites_default_limit",
+"value": 10
+},
+{
+"name": "likes_history_default_page",
+"value": 1
+},
+{
+"name": "likes_history_default_limit",
+"value": 10
+},
+{
+"name": "history_default_page",
+"value": 1
+},
+{
+"name": "history_default_limit",
+"value": 20
+}
+],
+"nfr": [
+{
+"category": "auth",
+"detail": "Bearer Token required for favorites management APIs"
+},
+{
+"category": "auth",
+"detail": "Bearer Token required for user like history API"
+},
+{
+"category": "auth",
+"detail": "Bearer Token required for history management APIs"
+},
+{
+"category": "auth",
+"detail": "Like stats API authentication is optional"
+}
+]
+}

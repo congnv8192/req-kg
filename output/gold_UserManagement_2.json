@@ -1,0 +1,20 @@
+{
+  "nfr:config": "NFR-struct",
+  "const:API_PORT": "threshold",
+  "const:APP_VERSION": "threshold",
+  "node:create_user": "FR-endpoint",
+  "node:get_user_by_id": "FR-endpoint",
+  "node:get_user_by_username": "FR-endpoint",
+  "node:get_user_by_email": "FR-endpoint",
+  "node:update_user": "FR-endpoint",
+  "node:delete_user": "FR-endpoint",
+  "node:health_check": "FR-endpoint",
+  "node:register_user": "FR-endpoint",
+  "node:login_user": "FR-endpoint",
+  "node:get_user": "FR-endpoint",
+  "nfr:auth": "NFR-struct",
+  "node:create_access_token": "FR-endpoint",
+  "node:get_current_user": "FR-endpoint",
+  "node:get_current_user_id": "FR-endpoint",
+  "nfr:containerization": "NFR-struct"
+}

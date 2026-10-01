@@ -1,0 +1,324 @@
+{
+  "nodes": [
+    {
+      "id": "main",
+      "kind": "module",
+      "name": "main",
+      "qualified": "main",
+      "line": 1
+    },
+    {
+      "id": "TaskCreate",
+      "kind": "class",
+      "name": "TaskCreate",
+      "qualified": "TaskCreate",
+      "line": 14,
+      "bases": [
+        "BaseModel"
+      ],
+      "is_model": true
+    },
+    {
+      "id": "TaskCreate.title",
+      "kind": "field",
+      "name": "title",
+      "qualified": "TaskCreate.title",
+      "line": 15
+    },
+    {
+      "id": "TaskCreate.description",
+      "kind": "field",
+      "name": "description",
+      "qualified": "TaskCreate.description",
+      "line": 16
+    },
+    {
+      "id": "TaskCreate.priority",
+      "kind": "field",
+      "name": "priority",
+      "qualified": "TaskCreate.priority",
+      "line": 17
+    },
+    {
+      "id": "TaskCreate.status",
+      "kind": "field",
+      "name": "status",
+      "qualified": "TaskCreate.status",
+      "line": 18
+    },
+    {
+      "id": "TaskCreate.due_date",
+      "kind": "field",
+      "name": "due_date",
+      "qualified": "TaskCreate.due_date",
+      "line": 19
+    },
+    {
+      "id": "TaskUpdate",
+      "kind": "class",
+      "name": "TaskUpdate",
+      "qualified": "TaskUpdate",
+      "line": 22,
+      "bases": [
+        "BaseModel"
+      ],
+      "is_model": true
+    },
+    {
+      "id": "TaskUpdate.title",
+      "kind": "field",
+      "name": "title",
+      "qualified": "TaskUpdate.title",
+      "line": 23
+    },
+    {
+      "id": "TaskUpdate.description",
+      "kind": "field",
+      "name": "description",
+      "qualified": "TaskUpdate.description",
+      "line": 24
+    },
+    {
+      "id": "TaskUpdate.priority",
+      "kind": "field",
+      "name": "priority",
+      "qualified": "TaskUpdate.priority",
+      "line": 25
+    },
+    {
+      "id": "TaskUpdate.status",
+      "kind": "field",
+      "name": "status",
+      "qualified": "TaskUpdate.status",
+      "line": 26
+    },
+    {
+      "id": "TaskUpdate.due_date",
+      "kind": "field",
+      "name": "due_date",
+      "qualified": "TaskUpdate.due_date",
+      "line": 27
+    },
+    {
+      "id": "now",
+      "kind": "function",
+      "name": "now",
+      "qualified": "now",
+      "line": 30
+    },
+    {
+      "id": "create_task",
+      "kind": "function",
+      "name": "create_task",
+      "qualified": "create_task",
+      "line": 35
+    },
+    {
+      "id": "list_tasks",
+      "kind": "function",
+      "name": "list_tasks",
+      "qualified": "list_tasks",
+      "line": 57
+    },
+    {
+      "id": "get_task",
+      "kind": "function",
+      "name": "get_task",
+      "qualified": "get_task",
+      "line": 78
+    },
+    {
+      "id": "update_task",
+      "kind": "function",
+      "name": "update_task",
+      "qualified": "update_task",
+      "line": 88
+    },
+    {
+      "id": "delete_task",
+      "kind": "function",
+      "name": "delete_task",
+      "qualified": "delete_task",
+      "line": 105
+    },
+    {
+      "id": "health",
+      "kind": "function",
+      "name": "health",
+      "qualified": "health",
+      "line": 115
+    }
+  ],
+  "edges": [
+    {
+      "src": "main",
+      "dst": "TaskCreate",
+      "type": "contains"
+    },
+    {
+      "src": "TaskCreate",
+      "dst": "TaskCreate.title",
+      "type": "has_field"
+    },
+    {
+      "src": "TaskCreate",
+      "dst": "TaskCreate.description",
+      "type": "has_field"
+    },
+    {
+      "src": "TaskCreate",
+      "dst": "TaskCreate.priority",
+      "type": "has_field"
+    },
+    {
+      "src": "TaskCreate",
+      "dst": "TaskCreate.status",
+      "type": "has_field"
+    },
+    {
+      "src": "TaskCreate",
+      "dst": "TaskCreate.due_date",
+      "type": "has_field"
+    },
+    {
+      "src": "main",
+      "dst": "TaskUpdate",
+      "type": "contains"
+    },
+    {
+      "src": "TaskUpdate",
+      "dst": "TaskUpdate.title",
+      "type": "has_field"
+    },
+    {
+      "src": "TaskUpdate",
+      "dst": "TaskUpdate.description",
+      "type": "has_field"
+    },
+    {
+      "src": "TaskUpdate",
+      "dst": "TaskUpdate.priority",
+      "type": "has_field"
+    },
+    {
+      "src": "TaskUpdate",
+      "dst": "TaskUpdate.status",
+      "type": "has_field"
+    },
+    {
+      "src": "TaskUpdate",
+      "dst": "TaskUpdate.due_date",
+      "type": "has_field"
+    },
+    {
+      "src": "main",
+      "dst": "now",
+      "type": "contains"
+    },
+    {
+      "src": "now",
+      "dst": "call:datetime.now(timezone.utc).isoformat",
+      "type": "calls"
+    },
+    {
+      "src": "now",
+      "dst": "call:datetime.now",
+      "type": "calls"
+    },
+    {
+      "src": "main",
+      "dst": "create_task",
+      "type": "contains"
+    },
+    {
+      "src": "create_task",
+      "dst": "call:now",
+      "type": "calls"
+    },
+    {
+      "src": "main",
+      "dst": "list_tasks",
+      "type": "contains"
+    },
+    {
+      "src": "list_tasks",
+      "dst": "call:list",
+      "type": "calls"
+    },
+    {
+      "src": "list_tasks",
+      "dst": "call:tasks.values",
+      "type": "calls"
+    },
+    {
+      "src": "main",
+      "dst": "get_task",
+      "type": "contains"
+    },
+    {
+      "src": "get_task",
+      "dst": "call:HTTPException",
+      "type": "calls"
+    },
+    {
+      "src": "get_task",
+      "dst": "call:tasks.get",
+      "type": "calls"
+    },
+    {
+      "src": "main",
+      "dst": "update_task",
+      "type": "contains"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:now",
+      "type": "calls"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:updates.items",
+      "type": "calls"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:update.model_dump",
+      "type": "calls"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:HTTPException",
+      "type": "calls"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:tasks.get",
+      "type": "calls"
+    },
+    {
+      "src": "main",
+      "dst": "delete_task",
+      "type": "contains"
+    },
+    {
+      "src": "delete_task",
+      "dst": "call:tasks.pop",
+      "type": "calls"
+    },
+    {
+      "src": "delete_task",
+      "dst": "call:HTTPException",
+      "type": "calls"
+    },
+    {
+      "src": "delete_task",
+      "dst": "call:tasks.get",
+      "type": "calls"
+    },
+    {
+      "src": "main",
+      "dst": "health",
+      "type": "contains"
+    }
+  ]
+}

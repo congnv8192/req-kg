@@ -1,0 +1,271 @@
+{
+"entities": [
+"Favorite",
+"Like",
+"History",
+"User",
+"Content"
+],
+"attributes": [
+{
+"name": "content_id",
+"type": "string",
+"required": true,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": true
+},
+{
+"name": "content_type",
+"type": "string",
+"required": true,
+"max_length": null,
+"min_length": null,
+"enum": [
+"post",
+"article",
+"product",
+"video"
+],
+"default": null,
+"unique": null
+},
+{
+"name": "category",
+"type": "string",
+"required": false,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": null
+},
+{
+"name": "id",
+"type": "string",
+"required": null,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": null
+},
+{
+"name": "user_id",
+"type": "string",
+"required": null,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": null
+},
+{
+"name": "created_at",
+"type": "string",
+"required": null,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": null
+},
+{
+"name": "updated_at",
+"type": "string",
+"required": null,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": null
+},
+{
+"name": "action",
+"type": "string",
+"required": true,
+"max_length": null,
+"min_length": null,
+"enum": [
+"like",
+"unlike",
+"view",
+"search",
+"share",
+"download"
+],
+"default": null,
+"unique": null
+},
+{
+"name": "metadata",
+"type": "object",
+"required": false,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": null
+},
+{
+"name": "session_id",
+"type": "string",
+"required": false,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": null
+},
+{
+"name": "ip_address",
+"type": "string",
+"required": null,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": null
+},
+{
+"name": "user_agent",
+"type": "string",
+"required": null,
+"max_length": null,
+"min_length": null,
+"enum": null,
+"default": null,
+"unique": null
+}
+],
+"operations": [
+{
+"method": "POST",
+"path": "/api/v1/favorites",
+"action": "create"
+},
+{
+"method": "GET",
+"path": "/api/v1/favorites",
+"action": "list"
+},
+{
+"method": "DELETE",
+"path": "/api/v1/favorites/{favorite_id}",
+"action": "delete"
+},
+{
+"method": "POST",
+"path": "/api/v1/likes",
+"action": "create"
+},
+{
+"method": "GET",
+"path": "/api/v1/likes/stats/{content_id}",
+"action": "retrieve"
+},
+{
+"method": "GET",
+"path": "/api/v1/likes/history",
+"action": "list"
+},
+{
+"method": "POST",
+"path": "/api/v1/history",
+"action": "create"
+},
+{
+"method": "GET",
+"path": "/api/v1/history",
+"action": "list"
+},
+{
+"method": "DELETE",
+"path": "/api/v1/history/{history_id}",
+"action": "delete"
+},
+{
+"method": "DELETE",
+"path": "/api/v1/history",
+"action": "delete"
+}
+],
+"relations": [
+{
+"from": "Favorite",
+"to": "User",
+"kind": "belongs_to"
+},
+{
+"from": "Like",
+"to": "User",
+"kind": "belongs_to"
+},
+{
+"from": "History",
+"to": "User",
+"kind": "belongs_to"
+},
+{
+"from": "Favorite",
+"to": "Content",
+"kind": "references"
+},
+{
+"from": "Like",
+"to": "Content",
+"kind": "references"
+},
+{
+"from": "History",
+"to": "Content",
+"kind": "references"
+}
+],
+"thresholds": [
+{
+"name": "port",
+"value": 8082
+},
+{
+"name": "favorites_limit_max",
+"value": 100
+},
+{
+"name": "likes_history_limit_max",
+"value": 50
+},
+{
+"name": "history_limit_max",
+"value": 100
+}
+],
+"nfr": [
+{
+"category": "auth",
+"detail": "Bearer Token required for authenticated APIs"
+},
+{
+"category": "configuration",
+"detail": "Base path is /api/v1 and content type is application/json"
+},
+{
+"category": "error_handling",
+"detail": "All APIs return a unified error response format"
+},
+{
+"category": "health_check",
+"detail": "Health check endpoint is available at /health"
+},
+{
+"category": "deployment",
+"detail": "Supports startup script, manual startup, and Docker deployment"
+},
+{
+"category": "containerization",
+"detail": "Docker build and run instructions are provided"
+}
+]
+}

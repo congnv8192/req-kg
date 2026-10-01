@@ -1,0 +1,1 @@
+{"entities":["role","permission","user"],"operations":[{"method":null,"path":null,"action":"create"},{"method":null,"path":null,"action":"other"},{"method":null,"path":null,"action":"other"},{"method":null,"path":null,"action":"other"}],"relations":[{"from":"role","to":"permission","kind":"assignment"},{"from":"user","to":"role","kind":"assignment"}]}

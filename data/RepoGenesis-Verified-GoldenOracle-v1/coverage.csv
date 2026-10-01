@@ -1,0 +1,31 @@
+repository,language,origin,framework,difficulty,delivery,location,impl_files,impl_loc,license
+django-rest-framework-crud,Python,real_world,Django REST,Easy,source,real_world/django-rest-framework-crud,28,445,MIT
+eve,Python,real_world,Eve/Flask,Medium,upstream_pin,https://github.com/pyeve/eve@0245e0cca95dba80ad23b9fb10b39a46112ba87d,,,BSD-3-Clause
+flask,Python,real_world,Flask,Easy,upstream_pin,https://github.com/pallets/flask@adf363679da2d9a5ddc564bb2da563c7ca083916,,,BSD-3-Clause
+rock-paper-scissors-flask,Python,real_world,Flask,Easy,upstream_pin,https://github.com/prof-rossetti/rock-paper-scissors-flask@1a66242df39c290e524cfdde595d8a5b52d9a667,,,CC BY-NC 4.0
+SimpleFastPyAPI,Python,real_world,FastAPI,Easy,upstream_pin,https://github.com/BaseMax/SimpleFastPyAPI@28521da4e4945fa3c8ee685f18c10cf9fa9a1ecc,,,GPL-3.0
+synapse,Python,real_world,Synapse,Medium,upstream_pin,https://github.com/element-hq/synapse@4367fb2d078c52959aeca0fe6874539c53e8360d,,,AGPL-3.0
+Blog,Python,expert_supervised,Django/FastAPI,Medium,source,expert_supervised/python/Blog,26,1599,MIT
+Chatroom,Python,expert_supervised,Flask/FastAPI,Easy,source,expert_supervised/python/Chatroom,1,366,MIT
+Customization,Python,expert_supervised,FastAPI,Hard,source,expert_supervised/python/Customization,22,1605,MIT
+Data_Rank_Searcher,Python,expert_supervised,Flask/FastAPI,Medium,source,expert_supervised/python/Data_Rank_Searcher,2,537,MIT
+File_Relay,Python,expert_supervised,Flask/FastAPI,Hard,source,expert_supervised/python/File_Relay,19,1255,MIT
+GameBackend,Python,expert_supervised,Flask/FastAPI,Hard,source,expert_supervised/python/GameBackend,3,1082,MIT
+mail_service,Python,expert_supervised,Flask/FastAPI,Hard,source,expert_supervised/python/mail_service,13,928,MIT
+Multilingual,Python,expert_supervised,Flask,Medium,source,expert_supervised/python/Multilingual,1,375,MIT
+simple-rbac-service,Python,expert_supervised,Flask/FastAPI,Easy,source,expert_supervised/python/simple-rbac-service,4,443,MIT
+StructuredDataConvertor,Python,expert_supervised,Flask/FastAPI,Medium,source,expert_supervised/python/StructuredDataConvertor,7,661,MIT
+TaskManagement,Python,expert_supervised,Flask/FastAPI,Medium,source,expert_supervised/python/TaskManagement,11,662,MIT
+Tic-Tac-Toe,Python,expert_supervised,Flask/FastAPI,Medium,source,expert_supervised/python/Tic-Tac-Toe,22,1016,MIT
+Timer4Tasker,Python,expert_supervised,Flask/FastAPI,Hard,source,expert_supervised/python/Timer4Tasker,13,1141,MIT
+UserManagement,Python,expert_supervised,FastAPI,Hard,source,expert_supervised/python/UserManagement,9,896,MIT
+UserManagement_2,Python,expert_supervised,Flask/FastAPI,Medium,source,expert_supervised/python/UserManagement_2,8,731,MIT
+WebPan,Python,expert_supervised,Flask/FastAPI,Hard,source,expert_supervised/python/WebPan,16,1308,MIT
+javalin-online-judge,Java,expert_supervised,Javalin,Medium,source,expert_supervised/java/javalin-online-judge,12,548,MIT
+javalin-task-manager,Java,expert_supervised,Javalin,Medium,source,expert_supervised/java/javalin-task-manager,9,517,MIT
+javalin-user-auth-platform,Java,expert_supervised,Javalin,Hard,source,expert_supervised/java/javalin-user-auth-platform,12,850,MIT
+micronaut-ci-status,Java,expert_supervised,Micronaut,Medium,source,expert_supervised/java/micronaut-ci-status,12,489,MIT
+quarkus-blog-cms,Java,expert_supervised,Quarkus,Medium,source,expert_supervised/java/quarkus-blog-cms,11,461,MIT
+spark-dashboard-backend,Java,expert_supervised,Spark,Medium,source,expert_supervised/java/spark-dashboard-backend,13,629,MIT
+spring-boot-course-scheduling,Java,expert_supervised,Spring Boot,Medium,source,expert_supervised/java/spring-boot-course-scheduling,26,803,MIT
+springboot-chat-gateway,Java,expert_supervised,Spring Boot,Medium,source,expert_supervised/java/springboot-chat-gateway,10,432,MIT

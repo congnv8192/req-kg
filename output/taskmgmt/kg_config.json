@@ -1,0 +1,159 @@
+{
+  "nodes": [
+    {
+      "id": "config",
+      "kind": "module",
+      "name": "config",
+      "qualified": "config",
+      "line": 1
+    },
+    {
+      "id": "Settings",
+      "kind": "class",
+      "name": "Settings",
+      "qualified": "Settings",
+      "line": 11,
+      "bases": [],
+      "is_model": false
+    },
+    {
+      "id": "Settings.HOST",
+      "kind": "field",
+      "name": "HOST",
+      "qualified": "Settings.HOST",
+      "line": 14
+    },
+    {
+      "id": "Settings.PORT",
+      "kind": "field",
+      "name": "PORT",
+      "qualified": "Settings.PORT",
+      "line": 15
+    },
+    {
+      "id": "Settings.API_V1_PREFIX",
+      "kind": "field",
+      "name": "API_V1_PREFIX",
+      "qualified": "Settings.API_V1_PREFIX",
+      "line": 17
+    },
+    {
+      "id": "Settings.PROJECT_NAME",
+      "kind": "field",
+      "name": "PROJECT_NAME",
+      "qualified": "Settings.PROJECT_NAME",
+      "line": 18
+    },
+    {
+      "id": "Settings.API_VERSION",
+      "kind": "field",
+      "name": "API_VERSION",
+      "qualified": "Settings.API_VERSION",
+      "line": 19
+    },
+    {
+      "id": "Settings.DATABASE_PATH",
+      "kind": "field",
+      "name": "DATABASE_PATH",
+      "qualified": "Settings.DATABASE_PATH",
+      "line": 25
+    },
+    {
+      "id": "Settings.DEFAULT_PAGE",
+      "kind": "field",
+      "name": "DEFAULT_PAGE",
+      "qualified": "Settings.DEFAULT_PAGE",
+      "line": 27
+    },
+    {
+      "id": "Settings.DEFAULT_LIMIT",
+      "kind": "field",
+      "name": "DEFAULT_LIMIT",
+      "qualified": "Settings.DEFAULT_LIMIT",
+      "line": 28
+    },
+    {
+      "id": "Settings.MAX_LIMIT",
+      "kind": "field",
+      "name": "MAX_LIMIT",
+      "qualified": "Settings.MAX_LIMIT",
+      "line": 29
+    },
+    {
+      "id": "Settings.TITLE_MAX_LENGTH",
+      "kind": "field",
+      "name": "TITLE_MAX_LENGTH",
+      "qualified": "Settings.TITLE_MAX_LENGTH",
+      "line": 31
+    },
+    {
+      "id": "Settings.DESCRIPTION_MAX_LENGTH",
+      "kind": "field",
+      "name": "DESCRIPTION_MAX_LENGTH",
+      "qualified": "Settings.DESCRIPTION_MAX_LENGTH",
+      "line": 32
+    }
+  ],
+  "edges": [
+    {
+      "src": "config",
+      "dst": "Settings",
+      "type": "contains"
+    },
+    {
+      "src": "Settings",
+      "dst": "Settings.HOST",
+      "type": "has_field"
+    },
+    {
+      "src": "Settings",
+      "dst": "Settings.PORT",
+      "type": "has_field"
+    },
+    {
+      "src": "Settings",
+      "dst": "Settings.API_V1_PREFIX",
+      "type": "has_field"
+    },
+    {
+      "src": "Settings",
+      "dst": "Settings.PROJECT_NAME",
+      "type": "has_field"
+    },
+    {
+      "src": "Settings",
+      "dst": "Settings.API_VERSION",
+      "type": "has_field"
+    },
+    {
+      "src": "Settings",
+      "dst": "Settings.DATABASE_PATH",
+      "type": "has_field"
+    },
+    {
+      "src": "Settings",
+      "dst": "Settings.DEFAULT_PAGE",
+      "type": "has_field"
+    },
+    {
+      "src": "Settings",
+      "dst": "Settings.DEFAULT_LIMIT",
+      "type": "has_field"
+    },
+    {
+      "src": "Settings",
+      "dst": "Settings.MAX_LIMIT",
+      "type": "has_field"
+    },
+    {
+      "src": "Settings",
+      "dst": "Settings.TITLE_MAX_LENGTH",
+      "type": "has_field"
+    },
+    {
+      "src": "Settings",
+      "dst": "Settings.DESCRIPTION_MAX_LENGTH",
+      "type": "has_field"
+    }
+  ]
+}

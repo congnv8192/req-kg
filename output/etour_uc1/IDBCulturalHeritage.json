@@ -1,0 +1,265 @@
+{
+  "nodes": [
+    {
+      "id": "IDBCulturalHeritage",
+      "kind": "file",
+      "name": "IDBCulturalHeritage",
+      "qualified": "IDBCulturalHeritage",
+      "line": 1
+    },
+    {
+      "id": "IDBCulturalHeritage.insertCulturalHeritage",
+      "kind": "method",
+      "name": "insertCulturalHeritage",
+      "qualified": "IDBCulturalHeritage.insertCulturalHeritage",
+      "line": 21,
+      "returns": "boolean"
+    },
+    {
+      "id": "IDBCulturalHeritage.modifyCulturalHeritage",
+      "kind": "method",
+      "name": "modifyCulturalHeritage",
+      "qualified": "IDBCulturalHeritage.modifyCulturalHeritage",
+      "line": 29,
+      "returns": "boolean"
+    },
+    {
+      "id": "IDBCulturalHeritage.clearCulturalHeritage",
+      "kind": "method",
+      "name": "clearCulturalHeritage",
+      "qualified": "IDBCulturalHeritage.clearCulturalHeritage",
+      "line": 37,
+      "returns": "boolean"
+    },
+    {
+      "id": "IDBCulturalHeritage.getCulturalHeritage",
+      "kind": "method",
+      "name": "getCulturalHeritage",
+      "qualified": "IDBCulturalHeritage.getCulturalHeritage",
+      "line": 45,
+      "returns": "BeanCulturalHeritage"
+    },
+    {
+      "id": "IDBCulturalHeritage.search",
+      "kind": "method",
+      "name": "search",
+      "qualified": "IDBCulturalHeritage.search",
+      "line": 68,
+      "returns": "ArrayList<BeanCulturalHeritage>"
+    },
+    {
+      "id": "IDBCulturalHeritage.searchAdvanced",
+      "kind": "method",
+      "name": "searchAdvanced",
+      "qualified": "IDBCulturalHeritage.searchAdvanced",
+      "line": 92,
+      "returns": "ArrayList<BeanCulturalHeritage>"
+    },
+    {
+      "id": "IDBCulturalHeritage.getSearchResultNumber",
+      "kind": "method",
+      "name": "getSearchResultNumber",
+      "qualified": "IDBCulturalHeritage.getSearchResultNumber",
+      "line": 110,
+      "returns": "int"
+    },
+    {
+      "id": "IDBCulturalHeritage.getSearchResultNumberAdvanced",
+      "kind": "method",
+      "name": "getSearchResultNumberAdvanced",
+      "qualified": "IDBCulturalHeritage.getSearchResultNumberAdvanced",
+      "line": 127,
+      "returns": "int"
+    },
+    {
+      "id": "IDBCulturalHeritage.getListBC",
+      "kind": "method",
+      "name": "getListBC",
+      "qualified": "IDBCulturalHeritage.getListBC",
+      "line": 136,
+      "returns": "ArrayList<BeanCulturalHeritage>"
+    }
+  ],
+  "edges": [
+    {
+      "src": "IDBCulturalHeritage",
+      "dst": "IDBCulturalHeritage",
+      "type": "contains"
+    },
+    {
+      "src": "IDBCulturalHeritage",
+      "dst": "IDBCulturalHeritage.insertCulturalHeritage",
+      "type": "has_method"
+    },
+    {
+      "src": "IDBCulturalHeritage.insertCulturalHeritage",
+      "dst": "type:BeanCulturalHeritage",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage",
+      "dst": "IDBCulturalHeritage.modifyCulturalHeritage",
+      "type": "has_method"
+    },
+    {
+      "src": "IDBCulturalHeritage.modifyCulturalHeritage",
+      "dst": "type:BeanCulturalHeritage",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage",
+      "dst": "IDBCulturalHeritage.clearCulturalHeritage",
+      "type": "has_method"
+    },
+    {
+      "src": "IDBCulturalHeritage.clearCulturalHeritage",
+      "dst": "type:int",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage",
+      "dst": "IDBCulturalHeritage.getCulturalHeritage",
+      "type": "has_method"
+    },
+    {
+      "src": "IDBCulturalHeritage.getCulturalHeritage",
+      "dst": "type:int",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage",
+      "dst": "IDBCulturalHeritage.search",
+      "type": "has_method"
+    },
+    {
+      "src": "IDBCulturalHeritage.search",
+      "dst": "type:String",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage.search",
+      "dst": "type:ArrayList<BeanTag>",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage.search",
+      "dst": "type:int",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage.search",
+      "dst": "type:int",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage.search",
+      "dst": "type:Point3D",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage.search",
+      "dst": "type:double",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage",
+      "dst": "IDBCulturalHeritage.searchAdvanced",
+      "type": "has_method"
+    },
+    {
+      "src": "IDBCulturalHeritage.searchAdvanced",
+      "dst": "type:int",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage.searchAdvanced",
+      "dst": "type:String",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage.searchAdvanced",
+      "dst": "type:ArrayList<BeanTag>",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage.searchAdvanced",
+      "dst": "type:int",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage.searchAdvanced",
+      "dst": "type:int",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage.searchAdvanced",
+      "dst": "type:Point3D",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage.searchAdvanced",
+      "dst": "type:double",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage",
+      "dst": "IDBCulturalHeritage.getSearchResultNumber",
+      "type": "has_method"
+    },
+    {
+      "src": "IDBCulturalHeritage.getSearchResultNumber",
+      "dst": "type:String",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage.getSearchResultNumber",
+      "dst": "type:ArrayList<BeanTag>",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage.getSearchResultNumber",
+      "dst": "type:Point3D",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage.getSearchResultNumber",
+      "dst": "type:double",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage",
+      "dst": "IDBCulturalHeritage.getSearchResultNumberAdvanced",
+      "type": "has_method"
+    },
+    {
+      "src": "IDBCulturalHeritage.getSearchResultNumberAdvanced",
+      "dst": "type:int",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage.getSearchResultNumberAdvanced",
+      "dst": "type:String",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage.getSearchResultNumberAdvanced",
+      "dst": "type:ArrayList<BeanTag>",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage.getSearchResultNumberAdvanced",
+      "dst": "type:Point3D",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage.getSearchResultNumberAdvanced",
+      "dst": "type:double",
+      "type": "param_type"
+    },
+    {
+      "src": "IDBCulturalHeritage",
+      "dst": "IDBCulturalHeritage.getListBC",
+      "type": "has_method"
+    }
+  ]
+}

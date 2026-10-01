@@ -1,0 +1,35 @@
+{
+  "nodes": [
+    {
+      "id": "health",
+      "kind": "module",
+      "name": "health",
+      "qualified": "health",
+      "line": 1
+    },
+    {
+      "id": "health_check",
+      "kind": "function",
+      "name": "health_check",
+      "qualified": "health_check",
+      "line": 13
+    }
+  ],
+  "edges": [
+    {
+      "src": "health",
+      "dst": "health_check",
+      "type": "contains"
+    },
+    {
+      "src": "health_check",
+      "dst": "call:datetime.now(timezone.utc).strftime",
+      "type": "calls"
+    },
+    {
+      "src": "health_check",
+      "dst": "call:datetime.now",
+      "type": "calls"
+    }
+  ]
+}

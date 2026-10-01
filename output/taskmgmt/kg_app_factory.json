@@ -1,0 +1,100 @@
+{
+  "nodes": [
+    {
+      "id": "app_factory",
+      "kind": "module",
+      "name": "app_factory",
+      "qualified": "app_factory",
+      "line": 1
+    },
+    {
+      "id": "create_app",
+      "kind": "function",
+      "name": "create_app",
+      "qualified": "create_app",
+      "line": 22
+    }
+  ],
+  "edges": [
+    {
+      "src": "app_factory",
+      "dst": "create_app",
+      "type": "contains"
+    },
+    {
+      "src": "create_app",
+      "dst": "call:JSONResponse",
+      "type": "calls"
+    },
+    {
+      "src": "create_app",
+      "dst": "call:app.exception_handler",
+      "type": "calls"
+    },
+    {
+      "src": "create_app",
+      "dst": "call:JSONResponse",
+      "type": "calls"
+    },
+    {
+      "src": "create_app",
+      "dst": "call:str",
+      "type": "calls"
+    },
+    {
+      "src": "create_app",
+      "dst": "call:app.exception_handler",
+      "type": "calls"
+    },
+    {
+      "src": "create_app",
+      "dst": "call:JSONResponse",
+      "type": "calls"
+    },
+    {
+      "src": "create_app",
+      "dst": "call:jsonable_encoder",
+      "type": "calls"
+    },
+    {
+      "src": "create_app",
+      "dst": "call:exc.errors",
+      "type": "calls"
+    },
+    {
+      "src": "create_app",
+      "dst": "call:app.exception_handler",
+      "type": "calls"
+    },
+    {
+      "src": "create_app",
+      "dst": "call:JSONResponse",
+      "type": "calls"
+    },
+    {
+      "src": "create_app",
+      "dst": "call:exc.to_dict",
+      "type": "calls"
+    },
+    {
+      "src": "create_app",
+      "dst": "call:app.exception_handler",
+      "type": "calls"
+    },
+    {
+      "src": "create_app",
+      "dst": "call:app.include_router",
+      "type": "calls"
+    },
+    {
+      "src": "create_app",
+      "dst": "call:app.include_router",
+      "type": "calls"
+    },
+    {
+      "src": "create_app",
+      "dst": "call:FastAPI",
+      "type": "calls"
+    }
+  ]
+}

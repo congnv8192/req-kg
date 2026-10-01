@@ -1,0 +1,293 @@
+{
+  "nodes": [
+    {
+      "id": "models",
+      "kind": "module",
+      "name": "models",
+      "qualified": "models",
+      "line": 1
+    },
+    {
+      "id": "User",
+      "kind": "class",
+      "name": "User",
+      "qualified": "User",
+      "line": 6,
+      "bases": [
+        "Base"
+      ],
+      "is_model": false
+    },
+    {
+      "id": "User.__tablename__",
+      "kind": "field",
+      "name": "__tablename__",
+      "qualified": "User.__tablename__",
+      "line": 7
+    },
+    {
+      "id": "User.id",
+      "kind": "field",
+      "name": "id",
+      "qualified": "User.id",
+      "line": 8
+    },
+    {
+      "id": "User.id~call:Column#198",
+      "kind": "call",
+      "name": "Column",
+      "qualified": "Column",
+      "line": 8
+    },
+    {
+      "id": "ref:Integer#205",
+      "kind": "ref",
+      "name": "Integer",
+      "qualified": "Integer",
+      "line": 8
+    },
+    {
+      "id": "User.id~call:Column#198~lit:True#226",
+      "kind": "literal",
+      "name": "True",
+      "qualified": "True",
+      "line": 8
+    },
+    {
+      "id": "User.id~call:Column#198~lit:True#238",
+      "kind": "literal",
+      "name": "True",
+      "qualified": "True",
+      "line": 8
+    },
+    {
+      "id": "User.name",
+      "kind": "field",
+      "name": "name",
+      "qualified": "User.name",
+      "line": 9
+    },
+    {
+      "id": "User.name~call:Column#261",
+      "kind": "call",
+      "name": "Column",
+      "qualified": "Column",
+      "line": 9
+    },
+    {
+      "id": "User.name~call:Column#261~call:String#268",
+      "kind": "call",
+      "name": "String",
+      "qualified": "String",
+      "line": 9
+    },
+    {
+      "id": "User.name~call:Column#261~call:String#268~lit:50#275",
+      "kind": "literal",
+      "name": "50",
+      "qualified": "50",
+      "line": 9
+    },
+    {
+      "id": "User.name~call:Column#261~lit:True#286",
+      "kind": "literal",
+      "name": "True",
+      "qualified": "True",
+      "line": 9
+    },
+    {
+      "id": "User.email",
+      "kind": "field",
+      "name": "email",
+      "qualified": "User.email",
+      "line": 10
+    },
+    {
+      "id": "User.email~call:Column#310",
+      "kind": "call",
+      "name": "Column",
+      "qualified": "Column",
+      "line": 10
+    },
+    {
+      "id": "User.email~call:Column#310~call:String#317",
+      "kind": "call",
+      "name": "String",
+      "qualified": "String",
+      "line": 10
+    },
+    {
+      "id": "User.email~call:Column#310~call:String#317~lit:50#324",
+      "kind": "literal",
+      "name": "50",
+      "qualified": "50",
+      "line": 10
+    },
+    {
+      "id": "User.email~call:Column#310~lit:True#336",
+      "kind": "literal",
+      "name": "True",
+      "qualified": "True",
+      "line": 10
+    },
+    {
+      "id": "User.email~call:Column#310~lit:True#348",
+      "kind": "literal",
+      "name": "True",
+      "qualified": "True",
+      "line": 10
+    },
+    {
+      "id": "User.password",
+      "kind": "field",
+      "name": "password",
+      "qualified": "User.password",
+      "line": 11
+    },
+    {
+      "id": "User.password~call:Column#375",
+      "kind": "call",
+      "name": "Column",
+      "qualified": "Column",
+      "line": 11
+    },
+    {
+      "id": "User.password~call:Column#375~call:String#382",
+      "kind": "call",
+      "name": "String",
+      "qualified": "String",
+      "line": 11
+    },
+    {
+      "id": "User.password~call:Column#375~call:String#382~lit:50#389",
+      "kind": "literal",
+      "name": "50",
+      "qualified": "50",
+      "line": 11
+    }
+  ],
+  "edges": [
+    {
+      "src": "models",
+      "dst": "User",
+      "type": "contains"
+    },
+    {
+      "src": "User",
+      "dst": "User.__tablename__",
+      "type": "has_field"
+    },
+    {
+      "src": "User",
+      "dst": "User.id",
+      "type": "has_field"
+    },
+    {
+      "src": "User.id~call:Column#198",
+      "dst": "ref:Integer#205",
+      "type": "has_arg",
+      "arg_index": 0
+    },
+    {
+      "src": "User.id~call:Column#198",
+      "dst": "User.id~call:Column#198~lit:True#226",
+      "type": "has_arg",
+      "arg_name": "primary_key"
+    },
+    {
+      "src": "User.id~call:Column#198",
+      "dst": "User.id~call:Column#198~lit:True#238",
+      "type": "has_arg",
+      "arg_name": "index"
+    },
+    {
+      "src": "User.id",
+      "dst": "User.id~call:Column#198",
+      "type": "invokes"
+    },
+    {
+      "src": "User",
+      "dst": "User.name",
+      "type": "has_field"
+    },
+    {
+      "src": "User.name~call:Column#261~call:String#268",
+      "dst": "User.name~call:Column#261~call:String#268~lit:50#275",
+      "type": "has_arg",
+      "arg_index": 0
+    },
+    {
+      "src": "User.name~call:Column#261",
+      "dst": "User.name~call:Column#261~call:String#268",
+      "type": "has_arg",
+      "arg_index": 0
+    },
+    {
+      "src": "User.name~call:Column#261",
+      "dst": "User.name~call:Column#261~lit:True#286",
+      "type": "has_arg",
+      "arg_name": "index"
+    },
+    {
+      "src": "User.name",
+      "dst": "User.name~call:Column#261",
+      "type": "invokes"
+    },
+    {
+      "src": "User",
+      "dst": "User.email",
+      "type": "has_field"
+    },
+    {
+      "src": "User.email~call:Column#310~call:String#317",
+      "dst": "User.email~call:Column#310~call:String#317~lit:50#324",
+      "type": "has_arg",
+      "arg_index": 0
+    },
+    {
+      "src": "User.email~call:Column#310",
+      "dst": "User.email~call:Column#310~call:String#317",
+      "type": "has_arg",
+      "arg_index": 0
+    },
+    {
+      "src": "User.email~call:Column#310",
+      "dst": "User.email~call:Column#310~lit:True#336",
+      "type": "has_arg",
+      "arg_name": "unique"
+    },
+    {
+      "src": "User.email~call:Column#310",
+      "dst": "User.email~call:Column#310~lit:True#348",
+      "type": "has_arg",
+      "arg_name": "index"
+    },
+    {
+      "src": "User.email",
+      "dst": "User.email~call:Column#310",
+      "type": "invokes"
+    },
+    {
+      "src": "User",
+      "dst": "User.password",
+      "type": "has_field"
+    },
+    {
+      "src": "User.password~call:Column#375~call:String#382",
+      "dst": "User.password~call:Column#375~call:String#382~lit:50#389",
+      "type": "has_arg",
+      "arg_index": 0
+    },
+    {
+      "src": "User.password~call:Column#375",
+      "dst": "User.password~call:Column#375~call:String#382",
+      "type": "has_arg",
+      "arg_index": 0
+    },
+    {
+      "src": "User.password",
+      "dst": "User.password~call:Column#375",
+      "type": "invokes"
+    }
+  ]
+}

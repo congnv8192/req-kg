@@ -1,0 +1,28 @@
+{
+  "repo": "simple-rbac-service",
+  "coverage": {
+    "L1": 0.08333333333333333,
+    "L2": 0.4166666666666667,
+    "L3": 0.5
+  },
+  "passk": {
+    "L1": {
+      "passed": 0,
+      "total": 0
+    },
+    "L2": {
+      "passed": 0,
+      "total": 0
+    },
+    "L3": {
+      "passed": 0,
+      "total": 0
+    }
+  },
+  "rate": [
+    0,
+    0,
+    0
+  ],
+  "rho": 1.0
+}

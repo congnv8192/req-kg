@@ -1,0 +1,23 @@
+{
+  "node:health_check": "FR-endpoint",
+  "node:create_user": "FR-endpoint",
+  "node:get_users": "FR-endpoint",
+  "node:get_user": "FR-endpoint",
+  "node:update_user": "FR-endpoint",
+  "node:delete_user": "FR-endpoint",
+  "node:login": "FR-endpoint",
+  "node:register_error_handlers": "FR-endpoint",
+  "nfr:config": "NFR-struct",
+  "nfr:auth": "NFR-struct",
+  "nfr:error-handling": "NFR-struct",
+  "nfr:validation": "NFR-struct",
+  "node:validate_username": "FR-validation",
+  "node:validate_email": "FR-validation",
+  "node:validate_password": "FR-validation",
+  "node:validate_full_name": "FR-validation",
+  "node:validate_phone": "FR-validation",
+  "node:validate_role": "FR-validation",
+  "node:validate_status": "FR-validation",
+  "node:validate_pagination": "FR-validation",
+  "nfr:containerization": "NFR-struct"
+}

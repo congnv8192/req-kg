@@ -1,0 +1,176 @@
+{
+"entities": [
+"Task"
+],
+"attributes": [
+{
+"name": "id",
+"type": "integer",
+"required": null,
+"max_length": null,
+"enum": null,
+"default": null
+},
+{
+"name": "title",
+"type": "string",
+"required": true,
+"max_length": 200,
+"enum": null,
+"default": null
+},
+{
+"name": "description",
+"type": "string",
+"required": false,
+"max_length": 1000,
+"enum": null,
+"default": null
+},
+{
+"name": "priority",
+"type": null,
+"required": true,
+"max_length": null,
+"enum": [
+"low",
+"medium",
+"high"
+],
+"default": null
+},
+{
+"name": "status",
+"type": null,
+"required": null,
+"max_length": null,
+"enum": [
+"pending",
+"in_progress",
+"completed"
+],
+"default": "pending"
+},
+{
+"name": "due_date",
+"type": "ISO 8601",
+"required": false,
+"max_length": null,
+"enum": null,
+"default": null
+},
+{
+"name": "created_at",
+"type": null,
+"required": null,
+"max_length": null,
+"enum": null,
+"default": null
+},
+{
+"name": "updated_at",
+"type": null,
+"required": null,
+"max_length": null,
+"enum": null,
+"default": null
+}
+],
+"operations": [
+{
+"method": "POST",
+"path": "/api/v1/tasks",
+"action": "create"
+},
+{
+"method": "GET",
+"path": "/api/v1/tasks",
+"action": "list"
+},
+{
+"method": "GET",
+"path": "/api/v1/tasks/{task_id}",
+"action": "retrieve"
+},
+{
+"method": "PUT",
+"path": "/api/v1/tasks/{task_id}",
+"action": "update"
+},
+{
+"method": "DELETE",
+"path": "/api/v1/tasks/{task_id}",
+"action": "delete"
+},
+{
+"method": "GET",
+"path": "/api/v1/health",
+"action": "health"
+}
+],
+"relations": [],
+"thresholds": [
+{
+"name": "port",
+"value": 8080
+},
+{
+"name": "api_prefix",
+"value": "/api/v1"
+},
+{
+"name": "title_max_length",
+"value": 200
+},
+{
+"name": "description_max_length",
+"value": 1000
+},
+{
+"name": "default_page_size",
+"value": 10
+},
+{
+"name": "max_page_size",
+"value": 100
+},
+{
+"name": "default_status",
+"value": "pending"
+}
+],
+"nfr": [
+{
+"category": "validation",
+"detail": "strict input data validation and type checking"
+},
+{
+"category": "error_handling",
+"detail": "complete error handling and user-friendly error messages"
+},
+{
+"category": "logging",
+"detail": "complete operation logging"
+},
+{
+"category": "api_docs",
+"detail": "auto-generated Swagger/OpenAPI documentation"
+},
+{
+"category": "configuration",
+"detail": "configure DB connection and other parameters via environment variables"
+},
+{
+"category": "health_check",
+"detail": "provide health check endpoint for monitoring"
+},
+{
+"category": "containerization",
+"detail": "support Docker containerized deployment"
+},
+{
+"category": "deployment",
+"detail": "service listens on port 8080"
+}
+]
+}

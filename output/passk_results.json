@@ -1,0 +1,23 @@
+{
+  "L1": {
+    "passed": 0,
+    "total": 44,
+    "failed": 0,
+    "errors": 0,
+    "health_ok": false
+  },
+  "L2": {
+    "passed": 0,
+    "total": 44,
+    "failed": 0,
+    "errors": 44,
+    "health_ok": true
+  },
+  "L3": {
+    "passed": 31,
+    "total": 44,
+    "failed": 13,
+    "errors": 0,
+    "health_ok": true
+  }
+}

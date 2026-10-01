@@ -1,0 +1,14 @@
+{
+  "TaskManagement": {
+    "passed": 9,
+    "total": 44
+  },
+  "UserManagement": {
+    "passed": 4,
+    "total": 70
+  },
+  "Customization": {
+    "passed": 9,
+    "total": 64
+  }
+}

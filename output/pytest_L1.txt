@@ -1,0 +1,200 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.3, pytest-9.1.1, pluggy-1.6.0 -- g:\khkt-2026\experiment\.venv-run\Scripts\python.exe
+rootdir: g:\khkt-2026\experiment\output
+plugins: anyio-4.15.0
+collecting ... collected 44 items
+
+..\tests_patched\test_edge_cases.py::TestEdgeCases::test_task_title_boundary_values FAILED [  2%]
+..\tests_patched\test_edge_cases.py::TestEdgeCases::test_task_description_boundary_values FAILED [  4%]
+..\tests_patched\test_edge_cases.py::TestEdgeCases::test_unicode_characters_in_task FAILED [  6%]
+..\tests_patched\test_edge_cases.py::TestEdgeCases::test_special_characters_in_task FAILED [  9%]
+..\tests_patched\test_edge_cases.py::TestEdgeCases::test_date_formats FAILED [ 11%]
+..\tests_patched\test_edge_cases.py::TestEdgeCases::test_invalid_date_formats FAILED [ 13%]
+..\tests_patched\test_edge_cases.py::TestEdgeCases::test_empty_strings FAILED [ 15%]
+..\tests_patched\test_edge_cases.py::TestEdgeCases::test_whitespace_only_strings FAILED [ 18%]
+..\tests_patched\test_edge_cases.py::TestEdgeCases::test_null_values FAILED [ 20%]
+..\tests_patched\test_edge_cases.py::TestEdgeCases::test_extra_fields FAILED [ 22%]
+..\tests_patched\test_edge_cases.py::TestEdgeCases::test_case_sensitivity FAILED [ 25%]
+..\tests_patched\test_edge_cases.py::TestEdgeCases::test_large_numbers PASSED [ 27%]
+..\tests_patched\test_edge_cases.py::TestEdgeCases::test_negative_numbers PASSED [ 29%]
+..\tests_patched\test_edge_cases.py::TestEdgeCases::test_zero_values PASSED [ 31%]
+..\tests_patched\test_edge_cases.py::TestEdgeCases::test_sql_injection_attempts FAILED [ 34%]
+..\tests_patched\test_edge_cases.py::TestEdgeCases::test_xss_attempts FAILED [ 36%]
+..\tests_patched\test_edge_cases.py::TestEdgeCases::test_concurrent_requests FAILED [ 38%]
+..\tests_patched\test_edge_cases.py::TestEdgeCases::test_malformed_json FAILED [ 40%]
+..\tests_patched\test_edge_cases.py::TestEdgeCases::test_content_type_variations FAILED [ 43%]
+..\tests_patched\test_edge_cases.py::TestEdgeCases::test_missing_headers FAILED [ 45%]
+..\tests_patched\test_edge_cases.py::TestEdgeCases::test_very_long_url PASSED [ 47%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_health_check FAILED [ 50%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_create_task_success FAILED [ 52%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_create_task_minimal_data FAILED [ 54%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_create_task_invalid_priority FAILED [ 56%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_create_task_missing_required_fields FAILED [ 59%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_create_task_title_too_long FAILED [ 61%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_get_tasks_list_empty FAILED [ 63%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_get_tasks_list_with_data FAILED [ 65%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_get_tasks_list_pagination FAILED [ 68%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_get_tasks_list_filter_by_status FAILED [ 70%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_get_tasks_list_filter_by_priority FAILED [ 72%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_get_single_task_success PASSED [ 75%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_get_single_task_not_found FAILED [ 77%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_update_task_success PASSED [ 79%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_update_task_partial FAILED [ 81%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_update_task_invalid_status FAILED [ 84%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_update_task_not_found FAILED [ 86%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_delete_task_success FAILED [ 88%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_delete_task_not_found FAILED [ 90%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_task_workflow_complete FAILED [ 93%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_invalid_json_request FAILED [ 95%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_missing_content_type_header FAILED [ 97%]
+..\tests_patched\test_task_api.py::TestTaskAPI::test_large_pagination_limit FAILED [100%]
+
+================================== FAILURES ===================================
+E   assert 200 == 201
+     +  where 200 = <Response [200]>.status_code
+---------------------------- Captured stdout setup ----------------------------
+API server not running. Please start the server manually on port 8080
+Example commands:
+  - For Flask: python app.py
+  - For FastAPI: uvicorn main:app --port 8080
+  - For Django: python manage.py runserver 8080
+g:\khkt-2026\experiment\output\tests_patched\test_edge_cases.py:43: assert 200 == 201
+E   assert 200 == 201
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_edge_cases.py:75: assert 200 == 201
+E   assert 200 == 201
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_edge_cases.py:109: assert 200 == 201
+E   assert 200 == 201
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_edge_cases.py:128: assert 200 == 201
+E   assert 200 in [201, 422]
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_edge_cases.py:157: assert 200 in [201, 422]
+E   assert 200 == 422
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_edge_cases.py:188: assert 200 == 422
+E   assert 200 == 422
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_edge_cases.py:199: assert 200 == 422
+E   assert 200 == 422
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_edge_cases.py:223: assert 200 == 422
+E   assert 200 in [201, 422]
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_edge_cases.py:255: assert 200 in [201, 422]
+E   assert 200 == 201
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_edge_cases.py:272: assert 200 == 201
+E   assert 200 in [201, 422]
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_edge_cases.py:288: assert 200 in [201, 422]
+E   assert 200 in [201, 422]
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_edge_cases.py:342: assert 200 in [201, 422]
+E   assert 200 in [201, 422]
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_edge_cases.py:366: assert 200 in [201, 422]
+E   assert 200 == 201
+g:\khkt-2026\experiment\output\tests_patched\test_edge_cases.py:415: assert 200 == 201
+E   assert 422 == 400
+     +  where 422 = <Response [422]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_edge_cases.py:442: assert 422 == 400
+E   assert 200 in [201, 400, 415]
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_edge_cases.py:464: assert 200 in [201, 400, 415]
+E   assert 200 in [201, 400, 415]
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_edge_cases.py:478: assert 200 in [201, 400, 415]
+E   assert 404 == 200
+     +  where 404 = <Response [404]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_task_api.py:36: assert 404 == 200
+E   assert 200 == 201
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_task_api.py:58: assert 200 == 201
+E   assert 200 == 201
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_task_api.py:81: assert 200 == 201
+E   assert 200 == 422
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_task_api.py:101: assert 200 == 422
+E   AssertionError: assert 'error' in {'detail': [{'type': 'missing', 'loc': ['body', 'title'], 'msg': 'Field required', 'input': {'description': 'Missing title and priority'}}]}
+g:\khkt-2026\experiment\output\tests_patched\test_task_api.py:120: AssertionError: assert 'error' in {'detail': [{'type': 'missing', 'loc': ['body', 'title'], 'msg': 'Field required', 'input': {'description': 'Missing title and priority'}}]}
+E   assert 200 == 422
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_task_api.py:135: assert 200 == 422
+E   AssertionError: assert 'tasks' in []
+g:\khkt-2026\experiment\output\tests_patched\test_task_api.py:145: AssertionError: assert 'tasks' in []
+E   assert 200 == 201
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_task_api.py:166: assert 200 == 201
+E   assert 200 == 201
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_task_api.py:189: assert 200 == 201
+E   TypeError: list indices must be integers or slices, not str
+g:\khkt-2026\experiment\output\tests_patched\test_task_api.py:229: TypeError: list indices must be integers or slices, not str
+E   TypeError: list indices must be integers or slices, not str
+g:\khkt-2026\experiment\output\tests_patched\test_task_api.py:248: TypeError: list indices must be integers or slices, not str
+E   AssertionError: assert 'error' in {'detail': 'Task not found'}
+g:\khkt-2026\experiment\output\tests_patched\test_task_api.py:277: AssertionError: assert 'error' in {'detail': 'Task not found'}
+E   AssertionError: assert None == 'Original description'
+g:\khkt-2026\experiment\output\tests_patched\test_task_api.py:338: AssertionError: assert None == 'Original description'
+E   AssertionError: assert 'error' in {'detail': [{'type': 'missing', 'loc': ['body', 'title'], 'msg': 'Field required', 'input': {'status': 'invalid_status'}}]}
+g:\khkt-2026\experiment\output\tests_patched\test_task_api.py:362: AssertionError: assert 'error' in {'detail': [{'type': 'missing', 'loc': ['body', 'title'], 'msg': 'Field required', 'input': {'status': 'invalid_status'}}]}
+E   AssertionError: assert 'error' in {'detail': 'Task not found'}
+g:\khkt-2026\experiment\output\tests_patched\test_task_api.py:375: AssertionError: assert 'error' in {'detail': 'Task not found'}
+E   AssertionError: assert 'message' in {'detail': 'Task deleted'}
+g:\khkt-2026\experiment\output\tests_patched\test_task_api.py:394: AssertionError: assert 'message' in {'detail': 'Task deleted'}
+E   AssertionError: assert 'error' in {'detail': 'Task not found'}
+g:\khkt-2026\experiment\output\tests_patched\test_task_api.py:406: AssertionError: assert 'error' in {'detail': 'Task not found'}
+E   assert 200 == 201
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_task_api.py:423: assert 200 == 201
+E   assert 422 == 400
+     +  where 422 = <Response [422]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_task_api.py:467: assert 422 == 400
+E   assert 200 in [201, 400]
+     +  where 200 = <Response [200]>.status_code
+g:\khkt-2026\experiment\output\tests_patched\test_task_api.py:477: assert 200 in [201, 400]
+E   TypeError: list indices must be integers or slices, not str
+g:\khkt-2026\experiment\output\tests_patched\test_task_api.py:487: TypeError: list indices must be integers or slices, not str
+=========================== short test summary info ===========================
+FAILED ..\tests_patched\test_edge_cases.py::TestEdgeCases::test_task_title_boundary_values
+FAILED ..\tests_patched\test_edge_cases.py::TestEdgeCases::test_task_description_boundary_values
+FAILED ..\tests_patched\test_edge_cases.py::TestEdgeCases::test_unicode_characters_in_task
+FAILED ..\tests_patched\test_edge_cases.py::TestEdgeCases::test_special_characters_in_task
+FAILED ..\tests_patched\test_edge_cases.py::TestEdgeCases::test_date_formats
+FAILED ..\tests_patched\test_edge_cases.py::TestEdgeCases::test_invalid_date_formats
+FAILED ..\tests_patched\test_edge_cases.py::TestEdgeCases::test_empty_strings
+FAILED ..\tests_patched\test_edge_cases.py::TestEdgeCases::test_whitespace_only_strings
+FAILED ..\tests_patched\test_edge_cases.py::TestEdgeCases::test_null_values
+FAILED ..\tests_patched\test_edge_cases.py::TestEdgeCases::test_extra_fields
+FAILED ..\tests_patched\test_edge_cases.py::TestEdgeCases::test_case_sensitivity
+FAILED ..\tests_patched\test_edge_cases.py::TestEdgeCases::test_sql_injection_attempts
+FAILED ..\tests_patched\test_edge_cases.py::TestEdgeCases::test_xss_attempts
+FAILED ..\tests_patched\test_edge_cases.py::TestEdgeCases::test_concurrent_requests
+FAILED ..\tests_patched\test_edge_cases.py::TestEdgeCases::test_malformed_json
+FAILED ..\tests_patched\test_edge_cases.py::TestEdgeCases::test_content_type_variations
+FAILED ..\tests_patched\test_edge_cases.py::TestEdgeCases::test_missing_headers
+FAILED ..\tests_patched\test_task_api.py::TestTaskAPI::test_health_check - as...
+FAILED ..\tests_patched\test_task_api.py::TestTaskAPI::test_create_task_success
+FAILED ..\tests_patched\test_task_api.py::TestTaskAPI::test_create_task_minimal_data
+FAILED ..\tests_patched\test_task_api.py::TestTaskAPI::test_create_task_invalid_priority
+FAILED ..\tests_patched\test_task_api.py::TestTaskAPI::test_create_task_missing_required_fields
+FAILED ..\tests_patched\test_task_api.py::TestTaskAPI::test_create_task_title_too_long
+FAILED ..\tests_patched\test_task_api.py::TestTaskAPI::test_get_tasks_list_empty
+FAILED ..\tests_patched\test_task_api.py::TestTaskAPI::test_get_tasks_list_with_data
+FAILED ..\tests_patched\test_task_api.py::TestTaskAPI::test_get_tasks_list_pagination
+FAILED ..\tests_patched\test_task_api.py::TestTaskAPI::test_get_tasks_list_filter_by_status
+FAILED ..\tests_patched\test_task_api.py::TestTaskAPI::test_get_tasks_list_filter_by_priority
+FAILED ..\tests_patched\test_task_api.py::TestTaskAPI::test_get_single_task_not_found
+FAILED ..\tests_patched\test_task_api.py::TestTaskAPI::test_update_task_partial
+FAILED ..\tests_patched\test_task_api.py::TestTaskAPI::test_update_task_invalid_status
+FAILED ..\tests_patched\test_task_api.py::TestTaskAPI::test_update_task_not_found
+FAILED ..\tests_patched\test_task_api.py::TestTaskAPI::test_delete_task_success
+FAILED ..\tests_patched\test_task_api.py::TestTaskAPI::test_delete_task_not_found
+FAILED ..\tests_patched\test_task_api.py::TestTaskAPI::test_task_workflow_complete
+FAILED ..\tests_patched\test_task_api.py::TestTaskAPI::test_invalid_json_request
+FAILED ..\tests_patched\test_task_api.py::TestTaskAPI::test_missing_content_type_header
+FAILED ..\tests_patched\test_task_api.py::TestTaskAPI::test_large_pagination_limit
+======================== 38 failed, 6 passed in 45.95s ========================

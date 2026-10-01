@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "id": "main",
+      "kind": "module",
+      "name": "main",
+      "qualified": "main",
+      "line": 1
+    }
+  ],
+  "edges": []
+}

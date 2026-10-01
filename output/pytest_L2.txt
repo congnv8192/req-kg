@@ -1,0 +1,318 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.3, pytest-9.1.1, pluggy-1.6.0 -- G:\khkt-2026\experiment\.venv-run\Scripts\python.exe
+rootdir: G:\khkt-2026\experiment
+plugins: anyio-4.15.0
+collecting ... collected 44 items
+
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_task_title_boundary_values ERROR [  2%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_task_description_boundary_values ERROR [  4%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_unicode_characters_in_task ERROR [  6%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_special_characters_in_task ERROR [  9%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_date_formats ERROR [ 11%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_invalid_date_formats ERROR [ 13%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_empty_strings ERROR [ 15%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_whitespace_only_strings ERROR [ 18%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_null_values ERROR [ 20%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_extra_fields ERROR [ 22%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_case_sensitivity ERROR [ 25%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_large_numbers ERROR [ 27%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_negative_numbers ERROR [ 29%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_zero_values ERROR [ 31%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_sql_injection_attempts ERROR [ 34%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_xss_attempts ERROR [ 36%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_concurrent_requests ERROR [ 38%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_malformed_json ERROR [ 40%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_content_type_variations ERROR [ 43%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_missing_headers ERROR [ 45%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_very_long_url ERROR [ 47%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_health_check ERROR [ 50%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_create_task_success ERROR [ 52%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_create_task_minimal_data ERROR [ 54%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_create_task_invalid_priority ERROR [ 56%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_create_task_missing_required_fields ERROR [ 59%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_create_task_title_too_long ERROR [ 61%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_get_tasks_list_empty ERROR [ 63%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_get_tasks_list_with_data ERROR [ 65%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_get_tasks_list_pagination ERROR [ 68%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_get_tasks_list_filter_by_status ERROR [ 70%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_get_tasks_list_filter_by_priority ERROR [ 72%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_get_single_task_success ERROR [ 75%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_get_single_task_not_found ERROR [ 77%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_update_task_success ERROR [ 79%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_update_task_partial ERROR [ 81%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_update_task_invalid_status ERROR [ 84%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_update_task_not_found ERROR [ 86%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_delete_task_success ERROR [ 88%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_delete_task_not_found ERROR [ 90%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_task_workflow_complete ERROR [ 93%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_invalid_json_request ERROR [ 95%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_missing_content_type_header ERROR [ 97%]
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_large_pagination_limit ERROR [100%]
+
+=================================== ERRORS ====================================
+_______ ERROR at setup of TestEdgeCases.test_task_title_boundary_values _______
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py:25: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+____ ERROR at setup of TestEdgeCases.test_task_description_boundary_values ____
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py:25: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+_______ ERROR at setup of TestEdgeCases.test_unicode_characters_in_task _______
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py:25: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+_______ ERROR at setup of TestEdgeCases.test_special_characters_in_task _______
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py:25: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+______________ ERROR at setup of TestEdgeCases.test_date_formats ______________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py:25: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+__________ ERROR at setup of TestEdgeCases.test_invalid_date_formats __________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py:25: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+_____________ ERROR at setup of TestEdgeCases.test_empty_strings ______________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py:25: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+________ ERROR at setup of TestEdgeCases.test_whitespace_only_strings _________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py:25: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+______________ ERROR at setup of TestEdgeCases.test_null_values _______________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py:25: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+______________ ERROR at setup of TestEdgeCases.test_extra_fields ______________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py:25: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+____________ ERROR at setup of TestEdgeCases.test_case_sensitivity ____________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py:25: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+_____________ ERROR at setup of TestEdgeCases.test_large_numbers ______________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py:25: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+____________ ERROR at setup of TestEdgeCases.test_negative_numbers ____________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py:25: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+______________ ERROR at setup of TestEdgeCases.test_zero_values _______________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py:25: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+_________ ERROR at setup of TestEdgeCases.test_sql_injection_attempts _________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py:25: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+______________ ERROR at setup of TestEdgeCases.test_xss_attempts ______________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py:25: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+__________ ERROR at setup of TestEdgeCases.test_concurrent_requests ___________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py:25: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+_____________ ERROR at setup of TestEdgeCases.test_malformed_json _____________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py:25: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+________ ERROR at setup of TestEdgeCases.test_content_type_variations _________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py:25: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+____________ ERROR at setup of TestEdgeCases.test_missing_headers _____________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py:25: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+_____________ ERROR at setup of TestEdgeCases.test_very_long_url ______________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py:25: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+_______________ ERROR at setup of TestTaskAPI.test_health_check _______________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+___________ ERROR at setup of TestTaskAPI.test_create_task_success ____________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+_________ ERROR at setup of TestTaskAPI.test_create_task_minimal_data _________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+_______ ERROR at setup of TestTaskAPI.test_create_task_invalid_priority _______
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+___ ERROR at setup of TestTaskAPI.test_create_task_missing_required_fields ____
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+________ ERROR at setup of TestTaskAPI.test_create_task_title_too_long ________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+___________ ERROR at setup of TestTaskAPI.test_get_tasks_list_empty ___________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+_________ ERROR at setup of TestTaskAPI.test_get_tasks_list_with_data _________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+________ ERROR at setup of TestTaskAPI.test_get_tasks_list_pagination _________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+_____ ERROR at setup of TestTaskAPI.test_get_tasks_list_filter_by_status ______
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+____ ERROR at setup of TestTaskAPI.test_get_tasks_list_filter_by_priority _____
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+_________ ERROR at setup of TestTaskAPI.test_get_single_task_success __________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+________ ERROR at setup of TestTaskAPI.test_get_single_task_not_found _________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+___________ ERROR at setup of TestTaskAPI.test_update_task_success ____________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+___________ ERROR at setup of TestTaskAPI.test_update_task_partial ____________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+________ ERROR at setup of TestTaskAPI.test_update_task_invalid_status ________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+__________ ERROR at setup of TestTaskAPI.test_update_task_not_found ___________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+___________ ERROR at setup of TestTaskAPI.test_delete_task_success ____________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+__________ ERROR at setup of TestTaskAPI.test_delete_task_not_found ___________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+__________ ERROR at setup of TestTaskAPI.test_task_workflow_complete __________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+___________ ERROR at setup of TestTaskAPI.test_invalid_json_request ___________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+_______ ERROR at setup of TestTaskAPI.test_missing_content_type_header ________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+__________ ERROR at setup of TestTaskAPI.test_large_pagination_limit __________
+..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py:26: in setup
+    tasks = response.json().get('tasks', [])
+            ^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'list' object has no attribute 'get'
+=========================== short test summary info ===========================
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_task_title_boundary_values
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_task_description_boundary_values
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_unicode_characters_in_task
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_special_characters_in_task
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_date_formats
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_invalid_date_formats
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_empty_strings
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_whitespace_only_strings
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_null_values
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_extra_fields
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_case_sensitivity
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_large_numbers
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_negative_numbers
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_zero_values
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_sql_injection_attempts
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_xss_attempts
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_concurrent_requests
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_malformed_json
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_content_type_variations
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_missing_headers
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_edge_cases.py::TestEdgeCases::test_very_long_url
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_health_check
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_create_task_success
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_create_task_minimal_data
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_create_task_invalid_priority
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_create_task_missing_required_fields
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_create_task_title_too_long
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_get_tasks_list_empty
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_get_tasks_list_with_data
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_get_tasks_list_pagination
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_get_tasks_list_filter_by_status
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_get_tasks_list_filter_by_priority
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_get_single_task_success
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_get_single_task_not_found
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_update_task_success
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_update_task_partial
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_update_task_invalid_status
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_update_task_not_found
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_delete_task_success
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_delete_task_not_found
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_task_workflow_complete
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_invalid_json_request
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_missing_content_type_header
+ERROR ..\..\data\RepoGenesis-Verified-GoldenOracle-v1\expert_supervised\python\TaskManagement\tests\test_task_api.py::TestTaskAPI::test_large_pagination_limit
+============================= 44 errors in 1.18s ==============================

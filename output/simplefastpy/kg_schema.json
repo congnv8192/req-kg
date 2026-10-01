@@ -1,0 +1,105 @@
+{
+  "nodes": [
+    {
+      "id": "schema",
+      "kind": "module",
+      "name": "schema",
+      "qualified": "schema",
+      "line": 1
+    },
+    {
+      "id": "UserCreate",
+      "kind": "class",
+      "name": "UserCreate",
+      "qualified": "UserCreate",
+      "line": 4,
+      "bases": [
+        "BaseModel"
+      ],
+      "is_model": true
+    },
+    {
+      "id": "UserCreate.name",
+      "kind": "field",
+      "name": "name",
+      "qualified": "UserCreate.name",
+      "line": 5
+    },
+    {
+      "id": "UserCreate.email",
+      "kind": "field",
+      "name": "email",
+      "qualified": "UserCreate.email",
+      "line": 6
+    },
+    {
+      "id": "UserCreate.password",
+      "kind": "field",
+      "name": "password",
+      "qualified": "UserCreate.password",
+      "line": 7
+    },
+    {
+      "id": "UserUpdate",
+      "kind": "class",
+      "name": "UserUpdate",
+      "qualified": "UserUpdate",
+      "line": 9,
+      "bases": [
+        "BaseModel"
+      ],
+      "is_model": true
+    },
+    {
+      "id": "UserUpdate.name",
+      "kind": "field",
+      "name": "name",
+      "qualified": "UserUpdate.name",
+      "line": 10
+    },
+    {
+      "id": "UserUpdate.email",
+      "kind": "field",
+      "name": "email",
+      "qualified": "UserUpdate.email",
+      "line": 11
+    }
+  ],
+  "edges": [
+    {
+      "src": "schema",
+      "dst": "UserCreate",
+      "type": "contains"
+    },
+    {
+      "src": "UserCreate",
+      "dst": "UserCreate.name",
+      "type": "has_field"
+    },
+    {
+      "src": "UserCreate",
+      "dst": "UserCreate.email",
+      "type": "has_field"
+    },
+    {
+      "src": "UserCreate",
+      "dst": "UserCreate.password",
+      "type": "has_field"
+    },
+    {
+      "src": "schema",
+      "dst": "UserUpdate",
+      "type": "contains"
+    },
+    {
+      "src": "UserUpdate",
+      "dst": "UserUpdate.name",
+      "type": "has_field"
+    },
+    {
+      "src": "UserUpdate",
+      "dst": "UserUpdate.email",
+      "type": "has_field"
+    }
+  ]
+}

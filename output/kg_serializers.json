@@ -1,0 +1,41 @@
+{
+  "nodes": [
+    {
+      "id": "serializers",
+      "kind": "module",
+      "name": "serializers",
+      "qualified": "serializers",
+      "line": 1
+    },
+    {
+      "id": "MovieSerializer",
+      "kind": "class",
+      "name": "MovieSerializer",
+      "qualified": "MovieSerializer",
+      "line": 5,
+      "bases": [
+        "serializers.ModelSerializer"
+      ],
+      "is_model": false
+    },
+    {
+      "id": "MovieSerializer.creator",
+      "kind": "field",
+      "name": "creator",
+      "qualified": "MovieSerializer.creator",
+      "line": 6
+    }
+  ],
+  "edges": [
+    {
+      "src": "serializers",
+      "dst": "MovieSerializer",
+      "type": "contains"
+    },
+    {
+      "src": "MovieSerializer",
+      "dst": "MovieSerializer.creator",
+      "type": "has_field"
+    }
+  ]
+}

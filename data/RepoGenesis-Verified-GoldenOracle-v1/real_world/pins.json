@@ -1,0 +1,45 @@
+{
+  "note": "These repositories are third-party open source under their own licences, so RepoGenesis pins them by commit instead of redistributing the source. Checking out these exact commits reproduces the oracle used in the paper.",
+  "repositories": [
+    {
+      "name": "SimpleFastPyAPI",
+      "url": "https://github.com/BaseMax/SimpleFastPyAPI",
+      "commit": "28521da4e4945fa3c8ee685f18c10cf9fa9a1ecc",
+      "describe": "main",
+      "date": "2025-07-22",
+      "license": "GPL-3.0"
+    },
+    {
+      "name": "eve",
+      "url": "https://github.com/pyeve/eve",
+      "commit": "0245e0cca95dba80ad23b9fb10b39a46112ba87d",
+      "describe": "v2.2.3",
+      "date": "2025-08-26",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "flask",
+      "url": "https://github.com/pallets/flask",
+      "commit": "adf363679da2d9a5ddc564bb2da563c7ca083916",
+      "describe": "3.1.2-25-gadf36367",
+      "date": "2025-09-19",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "rock-paper-scissors-flask",
+      "url": "https://github.com/prof-rossetti/rock-paper-scissors-flask",
+      "commit": "1a66242df39c290e524cfdde595d8a5b52d9a667",
+      "describe": "master",
+      "date": "2019-06-07",
+      "license": "CC BY-NC 4.0"
+    },
+    {
+      "name": "synapse",
+      "url": "https://github.com/element-hq/synapse",
+      "commit": "4367fb2d078c52959aeca0fe6874539c53e8360d",
+      "describe": "v1.138.0-36-g4367fb2d07",
+      "date": "2025-09-18",
+      "license": "AGPL-3.0-only (or commercial)"
+    }
+  ]
+}

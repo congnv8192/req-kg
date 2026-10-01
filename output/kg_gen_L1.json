@@ -1,0 +1,369 @@
+{
+  "nodes": [
+    {
+      "id": "main",
+      "kind": "module",
+      "name": "main",
+      "qualified": "main",
+      "line": 1
+    },
+    {
+      "id": "TaskCreate",
+      "kind": "class",
+      "name": "TaskCreate",
+      "qualified": "TaskCreate",
+      "line": 12,
+      "bases": [
+        "BaseModel"
+      ],
+      "is_model": true
+    },
+    {
+      "id": "TaskCreate.title",
+      "kind": "field",
+      "name": "title",
+      "qualified": "TaskCreate.title",
+      "line": 13
+    },
+    {
+      "id": "TaskCreate.description",
+      "kind": "field",
+      "name": "description",
+      "qualified": "TaskCreate.description",
+      "line": 14
+    },
+    {
+      "id": "TaskCreate.status",
+      "kind": "field",
+      "name": "status",
+      "qualified": "TaskCreate.status",
+      "line": 15
+    },
+    {
+      "id": "TaskCreate.priority",
+      "kind": "field",
+      "name": "priority",
+      "qualified": "TaskCreate.priority",
+      "line": 16
+    },
+    {
+      "id": "TaskUpdate",
+      "kind": "class",
+      "name": "TaskUpdate",
+      "qualified": "TaskUpdate",
+      "line": 19,
+      "bases": [
+        "BaseModel"
+      ],
+      "is_model": true
+    },
+    {
+      "id": "TaskUpdate.title",
+      "kind": "field",
+      "name": "title",
+      "qualified": "TaskUpdate.title",
+      "line": 20
+    },
+    {
+      "id": "TaskUpdate.description",
+      "kind": "field",
+      "name": "description",
+      "qualified": "TaskUpdate.description",
+      "line": 21
+    },
+    {
+      "id": "TaskUpdate.status",
+      "kind": "field",
+      "name": "status",
+      "qualified": "TaskUpdate.status",
+      "line": 22
+    },
+    {
+      "id": "TaskUpdate.priority",
+      "kind": "field",
+      "name": "priority",
+      "qualified": "TaskUpdate.priority",
+      "line": 23
+    },
+    {
+      "id": "Task",
+      "kind": "class",
+      "name": "Task",
+      "qualified": "Task",
+      "line": 26,
+      "bases": [
+        "BaseModel"
+      ],
+      "is_model": true
+    },
+    {
+      "id": "Task.id",
+      "kind": "field",
+      "name": "id",
+      "qualified": "Task.id",
+      "line": 27
+    },
+    {
+      "id": "Task.title",
+      "kind": "field",
+      "name": "title",
+      "qualified": "Task.title",
+      "line": 28
+    },
+    {
+      "id": "Task.description",
+      "kind": "field",
+      "name": "description",
+      "qualified": "Task.description",
+      "line": 29
+    },
+    {
+      "id": "Task.status",
+      "kind": "field",
+      "name": "status",
+      "qualified": "Task.status",
+      "line": 30
+    },
+    {
+      "id": "Task.priority",
+      "kind": "field",
+      "name": "priority",
+      "qualified": "Task.priority",
+      "line": 31
+    },
+    {
+      "id": "create_task",
+      "kind": "function",
+      "name": "create_task",
+      "qualified": "create_task",
+      "line": 39
+    },
+    {
+      "id": "list_tasks",
+      "kind": "function",
+      "name": "list_tasks",
+      "qualified": "list_tasks",
+      "line": 49
+    },
+    {
+      "id": "get_task",
+      "kind": "function",
+      "name": "get_task",
+      "qualified": "get_task",
+      "line": 54
+    },
+    {
+      "id": "replace_task",
+      "kind": "function",
+      "name": "replace_task",
+      "qualified": "replace_task",
+      "line": 62
+    },
+    {
+      "id": "update_task",
+      "kind": "function",
+      "name": "update_task",
+      "qualified": "update_task",
+      "line": 72
+    },
+    {
+      "id": "delete_task",
+      "kind": "function",
+      "name": "delete_task",
+      "qualified": "delete_task",
+      "line": 85
+    }
+  ],
+  "edges": [
+    {
+      "src": "main",
+      "dst": "TaskCreate",
+      "type": "contains"
+    },
+    {
+      "src": "TaskCreate",
+      "dst": "TaskCreate.title",
+      "type": "has_field"
+    },
+    {
+      "src": "TaskCreate",
+      "dst": "TaskCreate.description",
+      "type": "has_field"
+    },
+    {
+      "src": "TaskCreate",
+      "dst": "TaskCreate.status",
+      "type": "has_field"
+    },
+    {
+      "src": "TaskCreate",
+      "dst": "TaskCreate.priority",
+      "type": "has_field"
+    },
+    {
+      "src": "main",
+      "dst": "TaskUpdate",
+      "type": "contains"
+    },
+    {
+      "src": "TaskUpdate",
+      "dst": "TaskUpdate.title",
+      "type": "has_field"
+    },
+    {
+      "src": "TaskUpdate",
+      "dst": "TaskUpdate.description",
+      "type": "has_field"
+    },
+    {
+      "src": "TaskUpdate",
+      "dst": "TaskUpdate.status",
+      "type": "has_field"
+    },
+    {
+      "src": "TaskUpdate",
+      "dst": "TaskUpdate.priority",
+      "type": "has_field"
+    },
+    {
+      "src": "main",
+      "dst": "Task",
+      "type": "contains"
+    },
+    {
+      "src": "Task",
+      "dst": "Task.id",
+      "type": "has_field"
+    },
+    {
+      "src": "Task",
+      "dst": "Task.title",
+      "type": "has_field"
+    },
+    {
+      "src": "Task",
+      "dst": "Task.description",
+      "type": "has_field"
+    },
+    {
+      "src": "Task",
+      "dst": "Task.status",
+      "type": "has_field"
+    },
+    {
+      "src": "Task",
+      "dst": "Task.priority",
+      "type": "has_field"
+    },
+    {
+      "src": "main",
+      "dst": "create_task",
+      "type": "contains"
+    },
+    {
+      "src": "create_task",
+      "dst": "call:Task",
+      "type": "calls"
+    },
+    {
+      "src": "create_task",
+      "dst": "call:task.model_dump",
+      "type": "calls"
+    },
+    {
+      "src": "main",
+      "dst": "list_tasks",
+      "type": "contains"
+    },
+    {
+      "src": "list_tasks",
+      "dst": "call:list",
+      "type": "calls"
+    },
+    {
+      "src": "list_tasks",
+      "dst": "call:tasks.values",
+      "type": "calls"
+    },
+    {
+      "src": "main",
+      "dst": "get_task",
+      "type": "contains"
+    },
+    {
+      "src": "get_task",
+      "dst": "call:HTTPException",
+      "type": "calls"
+    },
+    {
+      "src": "get_task",
+      "dst": "call:tasks.get",
+      "type": "calls"
+    },
+    {
+      "src": "main",
+      "dst": "replace_task",
+      "type": "contains"
+    },
+    {
+      "src": "replace_task",
+      "dst": "call:Task",
+      "type": "calls"
+    },
+    {
+      "src": "replace_task",
+      "dst": "call:task.model_dump",
+      "type": "calls"
+    },
+    {
+      "src": "replace_task",
+      "dst": "call:HTTPException",
+      "type": "calls"
+    },
+    {
+      "src": "main",
+      "dst": "update_task",
+      "type": "contains"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:Task",
+      "type": "calls"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:updated_data.update",
+      "type": "calls"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:task.model_dump",
+      "type": "calls"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:existing_task.model_dump",
+      "type": "calls"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:HTTPException",
+      "type": "calls"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:tasks.get",
+      "type": "calls"
+    },
+    {
+      "src": "main",
+      "dst": "delete_task",
+      "type": "contains"
+    },
+    {
+      "src": "delete_task",
+      "dst": "call:HTTPException",
+      "type": "calls"
+    }
+  ]
+}

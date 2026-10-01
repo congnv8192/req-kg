@@ -1,0 +1,454 @@
+[
+  {
+    "repo": "TaskManagement",
+    "L": "L1",
+    "R": 27,
+    "M": 5,
+    "A": 8,
+    "cov": 0.18518518518518517,
+    "prec": 0.625,
+    "R_g": {
+      "F": 7,
+      "C": 15,
+      "N": 5
+    },
+    "M_g": {
+      "F": 5,
+      "C": 0,
+      "N": 0
+    },
+    "cov_g": {
+      "F": 0.7142857142857143,
+      "C": 0.0,
+      "N": 0.0
+    },
+    "violations": 0,
+    "gap": [
+      "const:API_V1_PREFIX",
+      "const:API_VERSION",
+      "const:DEFAULT_LIMIT",
+      "const:DESCRIPTION_MAX_LENGTH",
+      "const:MAX_LIMIT",
+      "const:PORT",
+      "const:TITLE_MAX_LENGTH",
+      "enum:VALID_PRIORITIES",
+      "enum:VALID_STATUSES",
+      "enum:_UPDATABLE_FIELDS",
+      "nfr:config",
+      "nfr:containerization",
+      "nfr:error-handling",
+      "nfr:health-check",
+      "nfr:validation",
+      "node:get_tasks",
+      "node:health_check",
+      "node:validate_description",
+      "node:validate_due_date",
+      "node:validate_priority",
+      "node:validate_status",
+      "node:validate_title"
+    ],
+    "passed": 6,
+    "tests": 44,
+    "pass_rate": 0.13636363636363635
+  },
+  {
+    "repo": "TaskManagement",
+    "L": "L2",
+    "R": 27,
+    "M": 7,
+    "A": 16,
+    "cov": 0.25925925925925924,
+    "prec": 0.4375,
+    "R_g": {
+      "F": 7,
+      "C": 15,
+      "N": 5
+    },
+    "M_g": {
+      "F": 6,
+      "C": 0,
+      "N": 1
+    },
+    "cov_g": {
+      "F": 0.8571428571428571,
+      "C": 0.0,
+      "N": 0.2
+    },
+    "violations": 0,
+    "gap": [
+      "const:API_V1_PREFIX",
+      "const:API_VERSION",
+      "const:DEFAULT_LIMIT",
+      "const:DESCRIPTION_MAX_LENGTH",
+      "const:MAX_LIMIT",
+      "const:PORT",
+      "const:TITLE_MAX_LENGTH",
+      "enum:VALID_PRIORITIES",
+      "enum:VALID_STATUSES",
+      "enum:_UPDATABLE_FIELDS",
+      "nfr:config",
+      "nfr:containerization",
+      "nfr:error-handling",
+      "nfr:validation",
+      "node:get_tasks",
+      "node:validate_description",
+      "node:validate_due_date",
+      "node:validate_priority",
+      "node:validate_status",
+      "node:validate_title"
+    ],
+    "passed": 7,
+    "tests": 44,
+    "pass_rate": 0.1590909090909091
+  },
+  {
+    "repo": "TaskManagement",
+    "L": "L3",
+    "R": 27,
+    "M": 21,
+    "A": 30,
+    "cov": 0.7777777777777778,
+    "prec": 0.7,
+    "R_g": {
+      "F": 7,
+      "C": 15,
+      "N": 5
+    },
+    "M_g": {
+      "F": 6,
+      "C": 10,
+      "N": 5
+    },
+    "cov_g": {
+      "F": 0.8571428571428571,
+      "C": 0.6666666666666666,
+      "N": 1.0
+    },
+    "violations": 0,
+    "gap": [
+      "const:API_VERSION",
+      "const:DESCRIPTION_MAX_LENGTH",
+      "const:MAX_LIMIT",
+      "enum:VALID_PRIORITIES",
+      "enum:_UPDATABLE_FIELDS",
+      "node:get_tasks"
+    ],
+    "passed": 31,
+    "tests": 44,
+    "pass_rate": 0.7045454545454546
+  },
+  {
+    "repo": "UserManagement",
+    "L": "L1",
+    "R": 21,
+    "M": 5,
+    "A": 13,
+    "cov": 0.23809523809523808,
+    "prec": 0.38461538461538464,
+    "R_g": {
+      "F": 8,
+      "C": 8,
+      "N": 5
+    },
+    "M_g": {
+      "F": 5,
+      "C": 0,
+      "N": 0
+    },
+    "cov_g": {
+      "F": 0.625,
+      "C": 0.0,
+      "N": 0.0
+    },
+    "violations": 0,
+    "gap": [
+      "nfr:auth",
+      "nfr:config",
+      "nfr:containerization",
+      "nfr:error-handling",
+      "nfr:validation",
+      "node:get_users",
+      "node:health_check",
+      "node:register_error_handlers",
+      "node:validate_email",
+      "node:validate_full_name",
+      "node:validate_pagination",
+      "node:validate_password",
+      "node:validate_phone",
+      "node:validate_role",
+      "node:validate_status",
+      "node:validate_username"
+    ],
+    "passed": 0,
+    "tests": 69,
+    "pass_rate": 0.0
+  },
+  {
+    "repo": "UserManagement",
+    "L": "L2",
+    "R": 21,
+    "M": 7,
+    "A": 24,
+    "cov": 0.3333333333333333,
+    "prec": 0.2916666666666667,
+    "R_g": {
+      "F": 8,
+      "C": 8,
+      "N": 5
+    },
+    "M_g": {
+      "F": 6,
+      "C": 0,
+      "N": 1
+    },
+    "cov_g": {
+      "F": 0.75,
+      "C": 0.0,
+      "N": 0.2
+    },
+    "violations": 0,
+    "gap": [
+      "nfr:config",
+      "nfr:containerization",
+      "nfr:error-handling",
+      "nfr:validation",
+      "node:get_users",
+      "node:register_error_handlers",
+      "node:validate_email",
+      "node:validate_full_name",
+      "node:validate_pagination",
+      "node:validate_password",
+      "node:validate_phone",
+      "node:validate_role",
+      "node:validate_status",
+      "node:validate_username"
+    ],
+    "passed": 7,
+    "tests": 69,
+    "pass_rate": 0.10144927536231885
+  },
+  {
+    "repo": "UserManagement",
+    "L": "L3",
+    "R": 21,
+    "M": 18,
+    "A": 43,
+    "cov": 0.8571428571428571,
+    "prec": 0.4186046511627907,
+    "R_g": {
+      "F": 8,
+      "C": 8,
+      "N": 5
+    },
+    "M_g": {
+      "F": 6,
+      "C": 7,
+      "N": 5
+    },
+    "cov_g": {
+      "F": 0.75,
+      "C": 0.875,
+      "N": 1.0
+    },
+    "violations": 0,
+    "gap": [
+      "node:get_users",
+      "node:register_error_handlers",
+      "node:validate_pagination"
+    ],
+    "passed": 24,
+    "tests": 69,
+    "pass_rate": 0.34782608695652173
+  },
+  {
+    "repo": "Customization",
+    "L": "L1",
+    "R": 38,
+    "M": 0,
+    "A": 3,
+    "cov": 0.0,
+    "prec": 0.0,
+    "R_g": {
+      "F": 33,
+      "C": 2,
+      "N": 3
+    },
+    "M_g": {
+      "F": 0,
+      "C": 0,
+      "N": 0
+    },
+    "cov_g": {
+      "F": 0.0,
+      "C": 0.0,
+      "N": 0.0
+    },
+    "violations": 0,
+    "gap": [
+      "nfr:config",
+      "nfr:containerization",
+      "nfr:health-check",
+      "node:add_favorite",
+      "node:add_like",
+      "node:add_logging_middleware",
+      "node:create_application",
+      "node:create_favorite",
+      "node:create_history",
+      "node:create_like",
+      "node:create_middleware",
+      "node:delete_favorite",
+      "node:delete_history",
+      "node:delete_like",
+      "node:dispatch",
+      "node:get_cache",
+      "node:get_client_ip",
+      "node:get_content_like_stats",
+      "node:get_current_timestamp",
+      "node:get_current_user_id",
+      "node:get_current_user_id_optional",
+      "node:get_favorite_by_id",
+      "node:get_favorite_service",
+      "node:get_favorites",
+      "node:get_health_checker",
+      "node:get_history",
+      "node:get_history_by_id",
+      "node:get_history_service",
+      "node:get_like_history",
+      "node:get_like_service",
+      "node:get_like_stats",
+      "node:get_redis",
+      "node:get_user_favorites",
+      "node:get_user_history",
+      "node:get_user_like_history",
+      "node:health_check",
+      "node:validate_action_type",
+      "node:validate_content_type"
+    ],
+    "passed": 1,
+    "tests": 64,
+    "pass_rate": 0.015625
+  },
+  {
+    "repo": "Customization",
+    "L": "L2",
+    "R": 38,
+    "M": 4,
+    "A": 26,
+    "cov": 0.10526315789473684,
+    "prec": 0.15384615384615385,
+    "R_g": {
+      "F": 33,
+      "C": 2,
+      "N": 3
+    },
+    "M_g": {
+      "F": 4,
+      "C": 0,
+      "N": 0
+    },
+    "cov_g": {
+      "F": 0.12121212121212122,
+      "C": 0.0,
+      "N": 0.0
+    },
+    "violations": 0,
+    "gap": [
+      "nfr:config",
+      "nfr:containerization",
+      "nfr:health-check",
+      "node:add_favorite",
+      "node:add_like",
+      "node:add_logging_middleware",
+      "node:create_favorite",
+      "node:create_history",
+      "node:create_like",
+      "node:create_middleware",
+      "node:delete_favorite",
+      "node:delete_like",
+      "node:dispatch",
+      "node:get_client_ip",
+      "node:get_content_like_stats",
+      "node:get_current_timestamp",
+      "node:get_current_user_id",
+      "node:get_current_user_id_optional",
+      "node:get_favorite_by_id",
+      "node:get_favorite_service",
+      "node:get_favorites",
+      "node:get_health_checker",
+      "node:get_history",
+      "node:get_history_by_id",
+      "node:get_history_service",
+      "node:get_like_history",
+      "node:get_like_service",
+      "node:get_like_stats",
+      "node:get_user_favorites",
+      "node:get_user_history",
+      "node:get_user_like_history",
+      "node:health_check",
+      "node:validate_action_type",
+      "node:validate_content_type"
+    ],
+    "passed": 4,
+    "tests": 64,
+    "pass_rate": 0.0625
+  },
+  {
+    "repo": "Customization",
+    "L": "L3",
+    "R": 38,
+    "M": 9,
+    "A": 43,
+    "cov": 0.23684210526315788,
+    "prec": 0.20930232558139536,
+    "R_g": {
+      "F": 33,
+      "C": 2,
+      "N": 3
+    },
+    "M_g": {
+      "F": 4,
+      "C": 2,
+      "N": 3
+    },
+    "cov_g": {
+      "F": 0.12121212121212122,
+      "C": 1.0,
+      "N": 1.0
+    },
+    "violations": 0,
+    "gap": [
+      "node:add_favorite",
+      "node:add_like",
+      "node:add_logging_middleware",
+      "node:create_favorite",
+      "node:create_history",
+      "node:create_like",
+      "node:create_middleware",
+      "node:delete_favorite",
+      "node:delete_like",
+      "node:dispatch",
+      "node:get_client_ip",
+      "node:get_content_like_stats",
+      "node:get_current_timestamp",
+      "node:get_current_user_id",
+      "node:get_current_user_id_optional",
+      "node:get_favorite_by_id",
+      "node:get_favorite_service",
+      "node:get_favorites",
+      "node:get_health_checker",
+      "node:get_history",
+      "node:get_history_by_id",
+      "node:get_history_service",
+      "node:get_like_history",
+      "node:get_like_service",
+      "node:get_like_stats",
+      "node:get_user_favorites",
+      "node:get_user_history",
+      "node:get_user_like_history",
+      "node:health_check"
+    ],
+    "passed": 10,
+    "tests": 64,
+    "pass_rate": 0.15625
+  }
+]

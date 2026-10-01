@@ -1,0 +1,15 @@
+expert_supervised/java/
+expert_supervised/python/Blog
+expert_supervised/python/Chatroom
+expert_supervised/python/Data_Rank_Searcher
+expert_supervised/python/File_Relay
+expert_supervised/python/GameBackend
+expert_supervised/python/mail_service
+expert_supervised/python/Multilingual
+expert_supervised/python/StructuredDataConvertor
+expert_supervised/python/Tic-Tac-Toe
+expert_supervised/python/Timer4Tasker
+expert_supervised/python/WebPan
+
+real_world/checkouts
+real_world/fetch_oracles.sh

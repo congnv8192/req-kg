@@ -1,0 +1,163 @@
+{
+  "nodes": [
+    {
+      "id": "views",
+      "kind": "module",
+      "name": "views",
+      "qualified": "views",
+      "line": 1
+    },
+    {
+      "id": "MovieListCreateView",
+      "kind": "class",
+      "name": "MovieListCreateView",
+      "qualified": "MovieListCreateView",
+      "line": 10,
+      "bases": [
+        "generics.ListCreateAPIView"
+      ],
+      "is_model": false
+    },
+    {
+      "id": "MovieListCreateView.serializer_class",
+      "kind": "field",
+      "name": "serializer_class",
+      "qualified": "MovieListCreateView.serializer_class",
+      "line": 11
+    },
+    {
+      "id": "MovieListCreateView.permission_classes",
+      "kind": "field",
+      "name": "permission_classes",
+      "qualified": "MovieListCreateView.permission_classes",
+      "line": 12
+    },
+    {
+      "id": "MovieListCreateView.queryset",
+      "kind": "field",
+      "name": "queryset",
+      "qualified": "MovieListCreateView.queryset",
+      "line": 13
+    },
+    {
+      "id": "MovieListCreateView.filterset_class",
+      "kind": "field",
+      "name": "filterset_class",
+      "qualified": "MovieListCreateView.filterset_class",
+      "line": 14
+    },
+    {
+      "id": "MovieListCreateView.pagination_class",
+      "kind": "field",
+      "name": "pagination_class",
+      "qualified": "MovieListCreateView.pagination_class",
+      "line": 15
+    },
+    {
+      "id": "MovieListCreateView.perform_create",
+      "kind": "method",
+      "name": "perform_create",
+      "qualified": "MovieListCreateView.perform_create",
+      "line": 17
+    },
+    {
+      "id": "MovieRetrieveUpdateDestroyView",
+      "kind": "class",
+      "name": "MovieRetrieveUpdateDestroyView",
+      "qualified": "MovieRetrieveUpdateDestroyView",
+      "line": 21,
+      "bases": [
+        "generics.RetrieveUpdateDestroyAPIView"
+      ],
+      "is_model": false
+    },
+    {
+      "id": "MovieRetrieveUpdateDestroyView.serializer_class",
+      "kind": "field",
+      "name": "serializer_class",
+      "qualified": "MovieRetrieveUpdateDestroyView.serializer_class",
+      "line": 22
+    },
+    {
+      "id": "MovieRetrieveUpdateDestroyView.permission_classes",
+      "kind": "field",
+      "name": "permission_classes",
+      "qualified": "MovieRetrieveUpdateDestroyView.permission_classes",
+      "line": 23
+    },
+    {
+      "id": "MovieRetrieveUpdateDestroyView.queryset",
+      "kind": "field",
+      "name": "queryset",
+      "qualified": "MovieRetrieveUpdateDestroyView.queryset",
+      "line": 24
+    }
+  ],
+  "edges": [
+    {
+      "src": "views",
+      "dst": "MovieListCreateView",
+      "type": "contains"
+    },
+    {
+      "src": "MovieListCreateView",
+      "dst": "MovieListCreateView.serializer_class",
+      "type": "has_field"
+    },
+    {
+      "src": "MovieListCreateView",
+      "dst": "MovieListCreateView.permission_classes",
+      "type": "has_field"
+    },
+    {
+      "src": "MovieListCreateView",
+      "dst": "MovieListCreateView.queryset",
+      "type": "has_field"
+    },
+    {
+      "src": "MovieListCreateView",
+      "dst": "MovieListCreateView.filterset_class",
+      "type": "has_field"
+    },
+    {
+      "src": "MovieListCreateView",
+      "dst": "MovieListCreateView.pagination_class",
+      "type": "has_field"
+    },
+    {
+      "src": "MovieListCreateView",
+      "dst": "MovieListCreateView.perform_create",
+      "type": "has_method"
+    },
+    {
+      "src": "MovieListCreateView.perform_create",
+      "dst": "call:serializer.save",
+      "type": "calls"
+    },
+    {
+      "src": "MovieListCreateView.perform_create",
+      "dst": "arg:creator=self.request.user",
+      "type": "sets_arg"
+    },
+    {
+      "src": "views",
+      "dst": "MovieRetrieveUpdateDestroyView",
+      "type": "contains"
+    },
+    {
+      "src": "MovieRetrieveUpdateDestroyView",
+      "dst": "MovieRetrieveUpdateDestroyView.serializer_class",
+      "type": "has_field"
+    },
+    {
+      "src": "MovieRetrieveUpdateDestroyView",
+      "dst": "MovieRetrieveUpdateDestroyView.permission_classes",
+      "type": "has_field"
+    },
+    {
+      "src": "MovieRetrieveUpdateDestroyView",
+      "dst": "MovieRetrieveUpdateDestroyView.queryset",
+      "type": "has_field"
+    }
+  ]
+}

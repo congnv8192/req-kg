@@ -1,0 +1,263 @@
+{
+  "nodes": [
+    {
+      "id": "errors",
+      "kind": "module",
+      "name": "errors",
+      "qualified": "errors",
+      "line": 1
+    },
+    {
+      "id": "AppError",
+      "kind": "class",
+      "name": "AppError",
+      "qualified": "AppError",
+      "line": 19,
+      "bases": [
+        "Exception"
+      ],
+      "is_model": false
+    },
+    {
+      "id": "AppError.__init__",
+      "kind": "method",
+      "name": "__init__",
+      "qualified": "AppError.__init__",
+      "line": 22
+    },
+    {
+      "id": "AppError.details",
+      "kind": "field",
+      "name": "details",
+      "qualified": "AppError.details",
+      "line": 32
+    },
+    {
+      "id": "AppError.message",
+      "kind": "field",
+      "name": "message",
+      "qualified": "AppError.message",
+      "line": 31
+    },
+    {
+      "id": "AppError.code",
+      "kind": "field",
+      "name": "code",
+      "qualified": "AppError.code",
+      "line": 30
+    },
+    {
+      "id": "AppError.status_code",
+      "kind": "field",
+      "name": "status_code",
+      "qualified": "AppError.status_code",
+      "line": 29
+    },
+    {
+      "id": "AppError.to_dict",
+      "kind": "method",
+      "name": "to_dict",
+      "qualified": "AppError.to_dict",
+      "line": 35
+    },
+    {
+      "id": "BadRequestError",
+      "kind": "class",
+      "name": "BadRequestError",
+      "qualified": "BadRequestError",
+      "line": 42,
+      "bases": [
+        "AppError"
+      ],
+      "is_model": false
+    },
+    {
+      "id": "BadRequestError.__init__",
+      "kind": "method",
+      "name": "__init__",
+      "qualified": "BadRequestError.__init__",
+      "line": 45
+    },
+    {
+      "id": "ValidationError",
+      "kind": "class",
+      "name": "ValidationError",
+      "qualified": "ValidationError",
+      "line": 49,
+      "bases": [
+        "AppError"
+      ],
+      "is_model": false
+    },
+    {
+      "id": "ValidationError.__init__",
+      "kind": "method",
+      "name": "__init__",
+      "qualified": "ValidationError.__init__",
+      "line": 52
+    },
+    {
+      "id": "NotFoundError",
+      "kind": "class",
+      "name": "NotFoundError",
+      "qualified": "NotFoundError",
+      "line": 56,
+      "bases": [
+        "AppError"
+      ],
+      "is_model": false
+    },
+    {
+      "id": "NotFoundError.__init__",
+      "kind": "method",
+      "name": "__init__",
+      "qualified": "NotFoundError.__init__",
+      "line": 59
+    },
+    {
+      "id": "InternalError",
+      "kind": "class",
+      "name": "InternalError",
+      "qualified": "InternalError",
+      "line": 63,
+      "bases": [
+        "AppError"
+      ],
+      "is_model": false
+    },
+    {
+      "id": "InternalError.__init__",
+      "kind": "method",
+      "name": "__init__",
+      "qualified": "InternalError.__init__",
+      "line": 66
+    }
+  ],
+  "edges": [
+    {
+      "src": "errors",
+      "dst": "AppError",
+      "type": "contains"
+    },
+    {
+      "src": "AppError",
+      "dst": "AppError.__init__",
+      "type": "has_method"
+    },
+    {
+      "src": "AppError.__init__",
+      "dst": "call:super().__init__",
+      "type": "calls"
+    },
+    {
+      "src": "AppError.__init__",
+      "dst": "call:super",
+      "type": "calls"
+    },
+    {
+      "src": "AppError",
+      "dst": "AppError.details",
+      "type": "has_field"
+    },
+    {
+      "src": "AppError",
+      "dst": "AppError.message",
+      "type": "has_field"
+    },
+    {
+      "src": "AppError",
+      "dst": "AppError.code",
+      "type": "has_field"
+    },
+    {
+      "src": "AppError",
+      "dst": "AppError.status_code",
+      "type": "has_field"
+    },
+    {
+      "src": "AppError",
+      "dst": "AppError.to_dict",
+      "type": "has_method"
+    },
+    {
+      "src": "errors",
+      "dst": "BadRequestError",
+      "type": "contains"
+    },
+    {
+      "src": "BadRequestError",
+      "dst": "BadRequestError.__init__",
+      "type": "has_method"
+    },
+    {
+      "src": "BadRequestError.__init__",
+      "dst": "call:super().__init__",
+      "type": "calls"
+    },
+    {
+      "src": "BadRequestError.__init__",
+      "dst": "call:super",
+      "type": "calls"
+    },
+    {
+      "src": "errors",
+      "dst": "ValidationError",
+      "type": "contains"
+    },
+    {
+      "src": "ValidationError",
+      "dst": "ValidationError.__init__",
+      "type": "has_method"
+    },
+    {
+      "src": "ValidationError.__init__",
+      "dst": "call:super().__init__",
+      "type": "calls"
+    },
+    {
+      "src": "ValidationError.__init__",
+      "dst": "call:super",
+      "type": "calls"
+    },
+    {
+      "src": "errors",
+      "dst": "NotFoundError",
+      "type": "contains"
+    },
+    {
+      "src": "NotFoundError",
+      "dst": "NotFoundError.__init__",
+      "type": "has_method"
+    },
+    {
+      "src": "NotFoundError.__init__",
+      "dst": "call:super().__init__",
+      "type": "calls"
+    },
+    {
+      "src": "NotFoundError.__init__",
+      "dst": "call:super",
+      "type": "calls"
+    },
+    {
+      "src": "errors",
+      "dst": "InternalError",
+      "type": "contains"
+    },
+    {
+      "src": "InternalError",
+      "dst": "InternalError.__init__",
+      "type": "has_method"
+    },
+    {
+      "src": "InternalError.__init__",
+      "dst": "call:super().__init__",
+      "type": "calls"
+    },
+    {
+      "src": "InternalError.__init__",
+      "dst": "call:super",
+      "type": "calls"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+"entities": [
+"task"
+],
+"attributes": [
+{
+"name": "status",
+"type": null,
+"required": null,
+"max_length": null,
+"enum": null,
+"default": null
+},
+{
+"name": "priority",
+"type": null,
+"required": null,
+"max_length": null,
+"enum": null,
+"default": null
+}
+],
+"operations": [
+{
+"method": null,
+"path": null,
+"action": "create"
+},
+{
+"method": null,
+"path": null,
+"action": "list"
+},
+{
+"method": null,
+"path": null,
+"action": "retrieve"
+},
+{
+"method": null,
+"path": null,
+"action": "update"
+},
+{
+"method": null,
+"path": null,
+"action": "delete"
+}
+],
+"relations": [],
+"thresholds": [],
+"nfr": []
+}

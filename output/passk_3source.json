@@ -1,0 +1,62 @@
+{
+  "TaskManagement": {
+    "L2": {
+      "passed": 7,
+      "failed": 37,
+      "error": 0,
+      "total": 44
+    },
+    "L2+NFR": {
+      "passed": 9,
+      "failed": 35,
+      "error": 0,
+      "total": 44
+    },
+    "L3": {
+      "passed": 31,
+      "failed": 13,
+      "error": 0,
+      "total": 44
+    }
+  },
+  "UserManagement": {
+    "L2": {
+      "passed": 7,
+      "failed": 62,
+      "error": 0,
+      "total": 69
+    },
+    "L2+NFR": {
+      "passed": 4,
+      "failed": 43,
+      "error": 23,
+      "total": 70
+    },
+    "L3": {
+      "passed": 24,
+      "failed": 45,
+      "error": 0,
+      "total": 69
+    }
+  },
+  "Customization": {
+    "L2": {
+      "passed": 4,
+      "failed": 20,
+      "error": 40,
+      "total": 64
+    },
+    "L2+NFR": {
+      "passed": 9,
+      "failed": 55,
+      "error": 0,
+      "total": 64
+    },
+    "L3": {
+      "passed": 10,
+      "failed": 31,
+      "error": 23,
+      "total": 64
+    }
+  }
+}

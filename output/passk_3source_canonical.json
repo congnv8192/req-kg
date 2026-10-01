@@ -1,0 +1,29 @@
+{
+  "TaskManagement": {
+    "den": 44,
+    "L2": 7,
+    "L2NFR": 9,
+    "L3": 31,
+    "d_nfr_block": 2,
+    "d_field_constraints": 22,
+    "d_total": 24
+  },
+  "UserManagement": {
+    "den": 69,
+    "L2": 7,
+    "L2NFR": 4,
+    "L3": 24,
+    "d_nfr_block": -3,
+    "d_field_constraints": 20,
+    "d_total": 17
+  },
+  "Customization": {
+    "den": 64,
+    "L2": 4,
+    "L2NFR": 9,
+    "L3": 10,
+    "d_nfr_block": 5,
+    "d_field_constraints": 1,
+    "d_total": 6
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "L1": {
+    "coverage": 0.185,
+    "matched": 5,
+    "gold": 27
+  },
+  "L2": {
+    "coverage": 0.259,
+    "matched": 7,
+    "gold": 27
+  },
+  "L3": {
+    "coverage": 0.778,
+    "matched": 21,
+    "gold": 27
+  }
+}

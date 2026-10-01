@@ -1,0 +1,222 @@
+{
+  "nodes": [
+    {
+      "id": "tasks",
+      "kind": "module",
+      "name": "tasks",
+      "qualified": "tasks",
+      "line": 1
+    },
+    {
+      "id": "_read_json_body",
+      "kind": "function",
+      "name": "_read_json_body",
+      "qualified": "_read_json_body",
+      "line": 23
+    },
+    {
+      "id": "_task_not_found",
+      "kind": "function",
+      "name": "_task_not_found",
+      "qualified": "_task_not_found",
+      "line": 42
+    },
+    {
+      "id": "create_task",
+      "kind": "function",
+      "name": "create_task",
+      "qualified": "create_task",
+      "line": 47
+    },
+    {
+      "id": "get_tasks",
+      "kind": "function",
+      "name": "get_tasks",
+      "qualified": "get_tasks",
+      "line": 56
+    },
+    {
+      "id": "get_task",
+      "kind": "function",
+      "name": "get_task",
+      "qualified": "get_task",
+      "line": 87
+    },
+    {
+      "id": "update_task",
+      "kind": "function",
+      "name": "update_task",
+      "qualified": "update_task",
+      "line": 96
+    },
+    {
+      "id": "delete_task",
+      "kind": "function",
+      "name": "delete_task",
+      "qualified": "delete_task",
+      "line": 107
+    }
+  ],
+  "edges": [
+    {
+      "src": "tasks",
+      "dst": "_read_json_body",
+      "type": "contains"
+    },
+    {
+      "src": "_read_json_body",
+      "dst": "call:BadRequestError",
+      "type": "calls"
+    },
+    {
+      "src": "_read_json_body",
+      "dst": "call:str",
+      "type": "calls"
+    },
+    {
+      "src": "_read_json_body",
+      "dst": "call:json.loads",
+      "type": "calls"
+    },
+    {
+      "src": "_read_json_body",
+      "dst": "call:request.body",
+      "type": "calls"
+    },
+    {
+      "src": "tasks",
+      "dst": "_task_not_found",
+      "type": "contains"
+    },
+    {
+      "src": "_task_not_found",
+      "dst": "call:NotFoundError",
+      "type": "calls"
+    },
+    {
+      "src": "tasks",
+      "dst": "create_task",
+      "type": "contains"
+    },
+    {
+      "src": "create_task",
+      "dst": "call:JSONResponse",
+      "type": "calls"
+    },
+    {
+      "src": "create_task",
+      "dst": "call:repository.create_task",
+      "type": "calls"
+    },
+    {
+      "src": "create_task",
+      "dst": "call:validate_create_payload",
+      "type": "calls"
+    },
+    {
+      "src": "create_task",
+      "dst": "call:_read_json_body",
+      "type": "calls"
+    },
+    {
+      "src": "tasks",
+      "dst": "get_tasks",
+      "type": "contains"
+    },
+    {
+      "src": "get_tasks",
+      "dst": "call:math.ceil",
+      "type": "calls"
+    },
+    {
+      "src": "get_tasks",
+      "dst": "call:repository.list_tasks",
+      "type": "calls"
+    },
+    {
+      "src": "get_tasks",
+      "dst": "call:ValidationError",
+      "type": "calls"
+    },
+    {
+      "src": "get_tasks",
+      "dst": "call:list",
+      "type": "calls"
+    },
+    {
+      "src": "get_tasks",
+      "dst": "call:ValidationError",
+      "type": "calls"
+    },
+    {
+      "src": "get_tasks",
+      "dst": "call:list",
+      "type": "calls"
+    },
+    {
+      "src": "get_tasks",
+      "dst": "call:ValidationError",
+      "type": "calls"
+    },
+    {
+      "src": "get_tasks",
+      "dst": "call:ValidationError",
+      "type": "calls"
+    },
+    {
+      "src": "tasks",
+      "dst": "get_task",
+      "type": "contains"
+    },
+    {
+      "src": "get_task",
+      "dst": "call:_task_not_found",
+      "type": "calls"
+    },
+    {
+      "src": "get_task",
+      "dst": "call:repository.get_task",
+      "type": "calls"
+    },
+    {
+      "src": "tasks",
+      "dst": "update_task",
+      "type": "contains"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:_task_not_found",
+      "type": "calls"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:repository.update_task",
+      "type": "calls"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:validate_update_payload",
+      "type": "calls"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:_read_json_body",
+      "type": "calls"
+    },
+    {
+      "src": "tasks",
+      "dst": "delete_task",
+      "type": "contains"
+    },
+    {
+      "src": "delete_task",
+      "dst": "call:_task_not_found",
+      "type": "calls"
+    },
+    {
+      "src": "delete_task",
+      "dst": "call:repository.delete_task",
+      "type": "calls"
+    }
+  ]
+}

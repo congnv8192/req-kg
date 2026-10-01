@@ -1,0 +1,328 @@
+{
+  "nodes": [
+    {
+      "id": "repository",
+      "kind": "module",
+      "name": "repository",
+      "qualified": "repository",
+      "line": 1
+    },
+    {
+      "id": "const:_UPDATABLE_FIELDS",
+      "kind": "const",
+      "name": "_UPDATABLE_FIELDS",
+      "qualified": "const:_UPDATABLE_FIELDS",
+      "line": 12,
+      "enum": [
+        "title",
+        "description",
+        "priority",
+        "status",
+        "due_date"
+      ]
+    },
+    {
+      "id": "_utc_now_iso",
+      "kind": "function",
+      "name": "_utc_now_iso",
+      "qualified": "_utc_now_iso",
+      "line": 15
+    },
+    {
+      "id": "_row_to_dict",
+      "kind": "function",
+      "name": "_row_to_dict",
+      "qualified": "_row_to_dict",
+      "line": 20
+    },
+    {
+      "id": "create_task",
+      "kind": "function",
+      "name": "create_task",
+      "qualified": "create_task",
+      "line": 33
+    },
+    {
+      "id": "get_task",
+      "kind": "function",
+      "name": "get_task",
+      "qualified": "get_task",
+      "line": 58
+    },
+    {
+      "id": "list_tasks",
+      "kind": "function",
+      "name": "list_tasks",
+      "qualified": "list_tasks",
+      "line": 64
+    },
+    {
+      "id": "update_task",
+      "kind": "function",
+      "name": "update_task",
+      "qualified": "update_task",
+      "line": 96
+    },
+    {
+      "id": "delete_task",
+      "kind": "function",
+      "name": "delete_task",
+      "qualified": "delete_task",
+      "line": 129
+    },
+    {
+      "id": "delete_all_tasks",
+      "kind": "function",
+      "name": "delete_all_tasks",
+      "qualified": "delete_all_tasks",
+      "line": 136
+    }
+  ],
+  "edges": [
+    {
+      "src": "repository",
+      "dst": "const:_UPDATABLE_FIELDS",
+      "type": "defines_enum"
+    },
+    {
+      "src": "repository",
+      "dst": "_utc_now_iso",
+      "type": "contains"
+    },
+    {
+      "src": "_utc_now_iso",
+      "dst": "call:datetime.now",
+      "type": "calls"
+    },
+    {
+      "src": "_utc_now_iso",
+      "dst": "call:datetime.now(timezone.utc).strftime",
+      "type": "calls"
+    },
+    {
+      "src": "_utc_now_iso",
+      "dst": "call:datetime.now",
+      "type": "calls"
+    },
+    {
+      "src": "repository",
+      "dst": "_row_to_dict",
+      "type": "contains"
+    },
+    {
+      "src": "repository",
+      "dst": "create_task",
+      "type": "contains"
+    },
+    {
+      "src": "create_task",
+      "dst": "call:_row_to_dict",
+      "type": "calls"
+    },
+    {
+      "src": "create_task",
+      "dst": "call:conn.execute(\n            \"SELECT * FROM tasks WHERE id = ?\", (cursor.lastrowid,)\n        ).fetchone",
+      "type": "calls"
+    },
+    {
+      "src": "create_task",
+      "dst": "call:conn.execute",
+      "type": "calls"
+    },
+    {
+      "src": "create_task",
+      "dst": "call:conn.commit",
+      "type": "calls"
+    },
+    {
+      "src": "create_task",
+      "dst": "call:conn.execute",
+      "type": "calls"
+    },
+    {
+      "src": "create_task",
+      "dst": "call:data.get",
+      "type": "calls"
+    },
+    {
+      "src": "create_task",
+      "dst": "call:data.get",
+      "type": "calls"
+    },
+    {
+      "src": "create_task",
+      "dst": "call:db_session",
+      "type": "calls"
+    },
+    {
+      "src": "create_task",
+      "dst": "call:_utc_now_iso",
+      "type": "calls"
+    },
+    {
+      "src": "repository",
+      "dst": "get_task",
+      "type": "contains"
+    },
+    {
+      "src": "get_task",
+      "dst": "call:_row_to_dict",
+      "type": "calls"
+    },
+    {
+      "src": "get_task",
+      "dst": "call:conn.execute(\"SELECT * FROM tasks WHERE id = ?\", (task_id,)).fetchone",
+      "type": "calls"
+    },
+    {
+      "src": "get_task",
+      "dst": "call:conn.execute",
+      "type": "calls"
+    },
+    {
+      "src": "get_task",
+      "dst": "call:db_session",
+      "type": "calls"
+    },
+    {
+      "src": "repository",
+      "dst": "list_tasks",
+      "type": "contains"
+    },
+    {
+      "src": "list_tasks",
+      "dst": "call:_row_to_dict",
+      "type": "calls"
+    },
+    {
+      "src": "list_tasks",
+      "dst": "call:conn.execute(\n            f\"SELECT * FROM tasks {where_clause} ORDER BY id ASC LIMIT ? OFFSET ?\",\n            params + [limit, offset],\n        ).fetchall",
+      "type": "calls"
+    },
+    {
+      "src": "list_tasks",
+      "dst": "call:conn.execute",
+      "type": "calls"
+    },
+    {
+      "src": "list_tasks",
+      "dst": "call:conn.execute(\n            f\"SELECT COUNT(*) AS cnt FROM tasks {where_clause}\", params\n        ).fetchone",
+      "type": "calls"
+    },
+    {
+      "src": "list_tasks",
+      "dst": "call:conn.execute",
+      "type": "calls"
+    },
+    {
+      "src": "list_tasks",
+      "dst": "call:db_session",
+      "type": "calls"
+    },
+    {
+      "src": "list_tasks",
+      "dst": "call:' AND '.join",
+      "type": "calls"
+    },
+    {
+      "src": "list_tasks",
+      "dst": "call:params.append",
+      "type": "calls"
+    },
+    {
+      "src": "list_tasks",
+      "dst": "call:conditions.append",
+      "type": "calls"
+    },
+    {
+      "src": "list_tasks",
+      "dst": "call:params.append",
+      "type": "calls"
+    },
+    {
+      "src": "list_tasks",
+      "dst": "call:conditions.append",
+      "type": "calls"
+    },
+    {
+      "src": "repository",
+      "dst": "update_task",
+      "type": "contains"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:conn.commit",
+      "type": "calls"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:conn.execute",
+      "type": "calls"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:_utc_now_iso",
+      "type": "calls"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:_row_to_dict",
+      "type": "calls"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:conn.execute(\"SELECT * FROM tasks WHERE id = ?\", (task_id,)).fetchone",
+      "type": "calls"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:conn.execute",
+      "type": "calls"
+    },
+    {
+      "src": "update_task",
+      "dst": "call:db_session",
+      "type": "calls"
+    },
+    {
+      "src": "repository",
+      "dst": "delete_task",
+      "type": "contains"
+    },
+    {
+      "src": "delete_task",
+      "dst": "call:conn.commit",
+      "type": "calls"
+    },
+    {
+      "src": "delete_task",
+      "dst": "call:conn.execute",
+      "type": "calls"
+    },
+    {
+      "src": "delete_task",
+      "dst": "call:db_session",
+      "type": "calls"
+    },
+    {
+      "src": "repository",
+      "dst": "delete_all_tasks",
+      "type": "contains"
+    },
+    {
+      "src": "delete_all_tasks",
+      "dst": "call:conn.commit",
+      "type": "calls"
+    },
+    {
+      "src": "delete_all_tasks",
+      "dst": "call:conn.execute",
+      "type": "calls"
+    },
+    {
+      "src": "delete_all_tasks",
+      "dst": "call:db_session",
+      "type": "calls"
+    }
+  ]
+}

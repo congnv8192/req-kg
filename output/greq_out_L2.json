@@ -1,0 +1,111 @@
+{
+"entities": [
+"Task"
+],
+"attributes": [
+{
+"name": "id",
+"type": null,
+"required": null,
+"max_length": null,
+"enum": null,
+"default": null
+},
+{
+"name": "title",
+"type": null,
+"required": null,
+"max_length": null,
+"enum": null,
+"default": null
+},
+{
+"name": "description",
+"type": null,
+"required": null,
+"max_length": null,
+"enum": null,
+"default": null
+},
+{
+"name": "priority",
+"type": null,
+"required": null,
+"max_length": null,
+"enum": null,
+"default": null
+},
+{
+"name": "status",
+"type": null,
+"required": null,
+"max_length": null,
+"enum": null,
+"default": null
+},
+{
+"name": "due_date",
+"type": null,
+"required": null,
+"max_length": null,
+"enum": null,
+"default": null
+},
+{
+"name": "created_at",
+"type": null,
+"required": null,
+"max_length": null,
+"enum": null,
+"default": null
+},
+{
+"name": "updated_at",
+"type": null,
+"required": null,
+"max_length": null,
+"enum": null,
+"default": null
+}
+],
+"operations": [
+{
+"method": "POST",
+"path": "/api/v1/tasks",
+"action": "create"
+},
+{
+"method": "GET",
+"path": "/api/v1/tasks",
+"action": "list"
+},
+{
+"method": "GET",
+"path": "/api/v1/tasks/{id}",
+"action": "retrieve"
+},
+{
+"method": "PUT",
+"path": "/api/v1/tasks/{id}",
+"action": "update"
+},
+{
+"method": "DELETE",
+"path": "/api/v1/tasks/{id}",
+"action": "delete"
+},
+{
+"method": "GET",
+"path": "/api/v1/health",
+"action": "health"
+}
+],
+"relations": [],
+"thresholds": [],
+"nfr": [
+{
+"category": "health_check",
+"detail": "Service health check endpoint provided"
+}
+]
+}

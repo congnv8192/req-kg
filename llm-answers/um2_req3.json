@@ -1,0 +1,43 @@
+{
+"entities": ["User"],
+"attributes": [],
+"operations": [
+{
+"method": "POST",
+"path": "/api/v1/users/register",
+"action": "create"
+},
+{
+"method": "POST",
+"path": "/api/v1/users/login",
+"action": "login"
+},
+{
+"method": "GET",
+"path": "/api/v1/users/{user_id}",
+"action": "retrieve"
+},
+{
+"method": "PUT",
+"path": "/api/v1/users/{user_id}",
+"action": "update"
+},
+{
+"method": "DELETE",
+"path": "/api/v1/users/{user_id}",
+"action": "delete"
+}
+],
+"relations": [],
+"thresholds": [],
+"nfr": [
+{
+"category": "auth",
+"detail": "Uses JWT tokens for authentication"
+},
+{
+"category": "configuration",
+"detail": "Protocol is HTTP/HTTPS"
+}
+]
+}

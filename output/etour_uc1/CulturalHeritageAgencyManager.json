@@ -1,0 +1,131 @@
+{
+  "nodes": [
+    {
+      "id": "CulturalHeritageAgencyManager",
+      "kind": "file",
+      "name": "CulturalHeritageAgencyManager",
+      "qualified": "CulturalHeritageAgencyManager",
+      "line": 1
+    },
+    {
+      "id": "CulturalHeritageAgencyManager.clearCulturalHeritage",
+      "kind": "method",
+      "name": "clearCulturalHeritage",
+      "qualified": "CulturalHeritageAgencyManager.clearCulturalHeritage",
+      "line": 30,
+      "returns": "boolean"
+    },
+    {
+      "id": "CulturalHeritageAgencyManager.insertCulturalHeritage",
+      "kind": "method",
+      "name": "insertCulturalHeritage",
+      "qualified": "CulturalHeritageAgencyManager.insertCulturalHeritage",
+      "line": 49,
+      "returns": "boolean"
+    },
+    {
+      "id": "CulturalHeritageAgencyManager.getCulturalHeritage",
+      "kind": "method",
+      "name": "getCulturalHeritage",
+      "qualified": "CulturalHeritageAgencyManager.getCulturalHeritage",
+      "line": 70,
+      "returns": "ArrayList<BeanCulturalHeritage>"
+    },
+    {
+      "id": "CulturalHeritageAgencyManager.modifyCulturalHeritage",
+      "kind": "method",
+      "name": "modifyCulturalHeritage",
+      "qualified": "CulturalHeritageAgencyManager.modifyCulturalHeritage",
+      "line": 86,
+      "returns": "boolean"
+    },
+    {
+      "id": "CulturalHeritageAgencyManager.addTagCulturalHeritage",
+      "kind": "method",
+      "name": "addTagCulturalHeritage",
+      "qualified": "CulturalHeritageAgencyManager.addTagCulturalHeritage",
+      "line": 105,
+      "returns": "boolean"
+    },
+    {
+      "id": "CulturalHeritageAgencyManager.removeTagCulturalHeritage",
+      "kind": "method",
+      "name": "removeTagCulturalHeritage",
+      "qualified": "CulturalHeritageAgencyManager.removeTagCulturalHeritage",
+      "line": 153,
+      "returns": "boolean"
+    }
+  ],
+  "edges": [
+    {
+      "src": "CulturalHeritageAgencyManager",
+      "dst": "CulturalHeritageAgencyManager",
+      "type": "contains"
+    },
+    {
+      "src": "CulturalHeritageAgencyManager",
+      "dst": "CulturalHeritageAgencyManager.clearCulturalHeritage",
+      "type": "has_method"
+    },
+    {
+      "src": "CulturalHeritageAgencyManager.clearCulturalHeritage",
+      "dst": "type:int",
+      "type": "param_type"
+    },
+    {
+      "src": "CulturalHeritageAgencyManager",
+      "dst": "CulturalHeritageAgencyManager.insertCulturalHeritage",
+      "type": "has_method"
+    },
+    {
+      "src": "CulturalHeritageAgencyManager.insertCulturalHeritage",
+      "dst": "type:BeanCulturalHeritage",
+      "type": "param_type"
+    },
+    {
+      "src": "CulturalHeritageAgencyManager",
+      "dst": "CulturalHeritageAgencyManager.getCulturalHeritage",
+      "type": "has_method"
+    },
+    {
+      "src": "CulturalHeritageAgencyManager",
+      "dst": "CulturalHeritageAgencyManager.modifyCulturalHeritage",
+      "type": "has_method"
+    },
+    {
+      "src": "CulturalHeritageAgencyManager.modifyCulturalHeritage",
+      "dst": "type:BeanCulturalHeritage",
+      "type": "param_type"
+    },
+    {
+      "src": "CulturalHeritageAgencyManager",
+      "dst": "CulturalHeritageAgencyManager.addTagCulturalHeritage",
+      "type": "has_method"
+    },
+    {
+      "src": "CulturalHeritageAgencyManager.addTagCulturalHeritage",
+      "dst": "type:int",
+      "type": "param_type"
+    },
+    {
+      "src": "CulturalHeritageAgencyManager.addTagCulturalHeritage",
+      "dst": "type:int",
+      "type": "param_type"
+    },
+    {
+      "src": "CulturalHeritageAgencyManager",
+      "dst": "CulturalHeritageAgencyManager.removeTagCulturalHeritage",
+      "type": "has_method"
+    },
+    {
+      "src": "CulturalHeritageAgencyManager.removeTagCulturalHeritage",
+      "dst": "type:int",
+      "type": "param_type"
+    },
+    {
+      "src": "CulturalHeritageAgencyManager.removeTagCulturalHeritage",
+      "dst": "type:int",
+      "type": "param_type"
+    }
+  ]
+}
